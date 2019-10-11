@@ -1,6 +1,3 @@
----
-layout: page
----
 ## Privacy Policy
 
 xord.org built the RubySketch app as an Ad Supported app. This SERVICE is provided by xord.org at no cost and is intended for use as is.
