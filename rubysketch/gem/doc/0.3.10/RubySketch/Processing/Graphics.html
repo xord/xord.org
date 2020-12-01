@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: RubySketch::Processing::Graphics
+  
+    &mdash; Documentation by YARD 0.9.20
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "RubySketch::Processing::Graphics";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (G)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../RubySketch.html" title="RubySketch (module)">RubySketch</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Processing.html" title="RubySketch::Processing (module)">Processing</a></span></span>
+     &raquo; 
+    <span class="title">Graphics</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: RubySketch::Processing::Graphics
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">RubySketch::Processing::Graphics</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  <dl>
+      <dt>Includes:</dt>
+      <dd><span class='object_link'><a href="GraphicsContext.html" title="RubySketch::Processing::GraphicsContext (module)">GraphicsContext</a></span></dd>
+  </dl>
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/rubysketch/processing.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Draws graphics into an offscreen buffer</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+  <h2>Constant Summary</h2>
+  
+  <h3 class="inherited">Constants included
+     from <span class='object_link'><a href="GraphicsContext.html" title="RubySketch::Processing::GraphicsContext (module)">GraphicsContext</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="GraphicsContext.html#BASELINE-constant" title="RubySketch::Processing::GraphicsContext::BASELINE (constant)">RubySketch::Processing::GraphicsContext::BASELINE</a></span>, <span class='object_link'><a href="GraphicsContext.html#BOTTOM-constant" title="RubySketch::Processing::GraphicsContext::BOTTOM (constant)">RubySketch::Processing::GraphicsContext::BOTTOM</a></span>, <span class='object_link'><a href="GraphicsContext.html#BUTT-constant" title="RubySketch::Processing::GraphicsContext::BUTT (constant)">RubySketch::Processing::GraphicsContext::BUTT</a></span>, <span class='object_link'><a href="GraphicsContext.html#CENTER-constant" title="RubySketch::Processing::GraphicsContext::CENTER (constant)">RubySketch::Processing::GraphicsContext::CENTER</a></span>, <span class='object_link'><a href="GraphicsContext.html#CORNER-constant" title="RubySketch::Processing::GraphicsContext::CORNER (constant)">RubySketch::Processing::GraphicsContext::CORNER</a></span>, <span class='object_link'><a href="GraphicsContext.html#CORNERS-constant" title="RubySketch::Processing::GraphicsContext::CORNERS (constant)">RubySketch::Processing::GraphicsContext::CORNERS</a></span>, <span class='object_link'><a href="GraphicsContext.html#DEGREES-constant" title="RubySketch::Processing::GraphicsContext::DEGREES (constant)">RubySketch::Processing::GraphicsContext::DEGREES</a></span>, <span class='object_link'><a href="GraphicsContext.html#HALF_PI-constant" title="RubySketch::Processing::GraphicsContext::HALF_PI (constant)">RubySketch::Processing::GraphicsContext::HALF_PI</a></span>, <span class='object_link'><a href="GraphicsContext.html#HSB-constant" title="RubySketch::Processing::GraphicsContext::HSB (constant)">RubySketch::Processing::GraphicsContext::HSB</a></span>, <span class='object_link'><a href="GraphicsContext.html#LEFT-constant" title="RubySketch::Processing::GraphicsContext::LEFT (constant)">RubySketch::Processing::GraphicsContext::LEFT</a></span>, <span class='object_link'><a href="GraphicsContext.html#MITER-constant" title="RubySketch::Processing::GraphicsContext::MITER (constant)">RubySketch::Processing::GraphicsContext::MITER</a></span>, <span class='object_link'><a href="GraphicsContext.html#PI-constant" title="RubySketch::Processing::GraphicsContext::PI (constant)">RubySketch::Processing::GraphicsContext::PI</a></span>, <span class='object_link'><a href="GraphicsContext.html#QUARTER_PI-constant" title="RubySketch::Processing::GraphicsContext::QUARTER_PI (constant)">RubySketch::Processing::GraphicsContext::QUARTER_PI</a></span>, <span class='object_link'><a href="GraphicsContext.html#RADIANS-constant" title="RubySketch::Processing::GraphicsContext::RADIANS (constant)">RubySketch::Processing::GraphicsContext::RADIANS</a></span>, <span class='object_link'><a href="GraphicsContext.html#RADIUS-constant" title="RubySketch::Processing::GraphicsContext::RADIUS (constant)">RubySketch::Processing::GraphicsContext::RADIUS</a></span>, <span class='object_link'><a href="GraphicsContext.html#RGB-constant" title="RubySketch::Processing::GraphicsContext::RGB (constant)">RubySketch::Processing::GraphicsContext::RGB</a></span>, <span class='object_link'><a href="GraphicsContext.html#RIGHT-constant" title="RubySketch::Processing::GraphicsContext::RIGHT (constant)">RubySketch::Processing::GraphicsContext::RIGHT</a></span>, <span class='object_link'><a href="GraphicsContext.html#ROUND-constant" title="RubySketch::Processing::GraphicsContext::ROUND (constant)">RubySketch::Processing::GraphicsContext::ROUND</a></span>, <span class='object_link'><a href="GraphicsContext.html#SQUARE-constant" title="RubySketch::Processing::GraphicsContext::SQUARE (constant)">RubySketch::Processing::GraphicsContext::SQUARE</a></span>, <span class='object_link'><a href="GraphicsContext.html#TAU-constant" title="RubySketch::Processing::GraphicsContext::TAU (constant)">RubySketch::Processing::GraphicsContext::TAU</a></span>, <span class='object_link'><a href="GraphicsContext.html#TOP-constant" title="RubySketch::Processing::GraphicsContext::TOP (constant)">RubySketch::Processing::GraphicsContext::TOP</a></span>, <span class='object_link'><a href="GraphicsContext.html#TWO_PI-constant" title="RubySketch::Processing::GraphicsContext::TWO_PI (constant)">RubySketch::Processing::GraphicsContext::TWO_PI</a></span></p>
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#beginDraw-instance_method" title="#beginDraw (instance method)">#<strong>beginDraw</strong>(&amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Start drawing.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#endDraw-instance_method" title="#endDraw (instance method)">#<strong>endDraw</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>End drawing.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(width, height)  &#x21d2; Graphics </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Initialize graphics object.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="GraphicsContext.html" title="RubySketch::Processing::GraphicsContext (module)">GraphicsContext</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="GraphicsContext.html#angleMode-instance_method" title="RubySketch::Processing::GraphicsContext#angleMode (method)">#angleMode</a></span>, <span class='object_link'><a href="GraphicsContext.html#arc-instance_method" title="RubySketch::Processing::GraphicsContext#arc (method)">#arc</a></span>, <span class='object_link'><a href="GraphicsContext.html#background-instance_method" title="RubySketch::Processing::GraphicsContext#background (method)">#background</a></span>, <span class='object_link'><a href="GraphicsContext.html#bezier-instance_method" title="RubySketch::Processing::GraphicsContext#bezier (method)">#bezier</a></span>, <span class='object_link'><a href="GraphicsContext.html#circle-instance_method" title="RubySketch::Processing::GraphicsContext#circle (method)">#circle</a></span>, <span class='object_link'><a href="GraphicsContext.html#colorMode-instance_method" title="RubySketch::Processing::GraphicsContext#colorMode (method)">#colorMode</a></span>, <span class='object_link'><a href="GraphicsContext.html#copy-instance_method" title="RubySketch::Processing::GraphicsContext#copy (method)">#copy</a></span>, <span class='object_link'><a href="GraphicsContext.html#curve-instance_method" title="RubySketch::Processing::GraphicsContext#curve (method)">#curve</a></span>, <span class='object_link'><a href="GraphicsContext.html#ellipse-instance_method" title="RubySketch::Processing::GraphicsContext#ellipse (method)">#ellipse</a></span>, <span class='object_link'><a href="GraphicsContext.html#ellipseMode-instance_method" title="RubySketch::Processing::GraphicsContext#ellipseMode (method)">#ellipseMode</a></span>, <span class='object_link'><a href="GraphicsContext.html#fill-instance_method" title="RubySketch::Processing::GraphicsContext#fill (method)">#fill</a></span>, <span class='object_link'><a href="GraphicsContext.html#height-instance_method" title="RubySketch::Processing::GraphicsContext#height (method)">#height</a></span>, <span class='object_link'><a href="GraphicsContext.html#image-instance_method" title="RubySketch::Processing::GraphicsContext#image (method)">#image</a></span>, <span class='object_link'><a href="GraphicsContext.html#imageMode-instance_method" title="RubySketch::Processing::GraphicsContext#imageMode (method)">#imageMode</a></span>, <span class='object_link'><a href="GraphicsContext.html#line-instance_method" title="RubySketch::Processing::GraphicsContext#line (method)">#line</a></span>, <span class='object_link'><a href="GraphicsContext.html#noFill-instance_method" title="RubySketch::Processing::GraphicsContext#noFill (method)">#noFill</a></span>, <span class='object_link'><a href="GraphicsContext.html#noStroke-instance_method" title="RubySketch::Processing::GraphicsContext#noStroke (method)">#noStroke</a></span>, <span class='object_link'><a href="GraphicsContext.html#point-instance_method" title="RubySketch::Processing::GraphicsContext#point (method)">#point</a></span>, <span class='object_link'><a href="GraphicsContext.html#pop-instance_method" title="RubySketch::Processing::GraphicsContext#pop (method)">#pop</a></span>, <span class='object_link'><a href="GraphicsContext.html#popMatrix-instance_method" title="RubySketch::Processing::GraphicsContext#popMatrix (method)">#popMatrix</a></span>, <span class='object_link'><a href="GraphicsContext.html#popStyle-instance_method" title="RubySketch::Processing::GraphicsContext#popStyle (method)">#popStyle</a></span>, <span class='object_link'><a href="GraphicsContext.html#push-instance_method" title="RubySketch::Processing::GraphicsContext#push (method)">#push</a></span>, <span class='object_link'><a href="GraphicsContext.html#pushMatrix-instance_method" title="RubySketch::Processing::GraphicsContext#pushMatrix (method)">#pushMatrix</a></span>, <span class='object_link'><a href="GraphicsContext.html#pushStyle-instance_method" title="RubySketch::Processing::GraphicsContext#pushStyle (method)">#pushStyle</a></span>, <span class='object_link'><a href="GraphicsContext.html#quad-instance_method" title="RubySketch::Processing::GraphicsContext#quad (method)">#quad</a></span>, <span class='object_link'><a href="GraphicsContext.html#rect-instance_method" title="RubySketch::Processing::GraphicsContext#rect (method)">#rect</a></span>, <span class='object_link'><a href="GraphicsContext.html#rectMode-instance_method" title="RubySketch::Processing::GraphicsContext#rectMode (method)">#rectMode</a></span>, <span class='object_link'><a href="GraphicsContext.html#resetMatrix-instance_method" title="RubySketch::Processing::GraphicsContext#resetMatrix (method)">#resetMatrix</a></span>, <span class='object_link'><a href="GraphicsContext.html#rotate-instance_method" title="RubySketch::Processing::GraphicsContext#rotate (method)">#rotate</a></span>, <span class='object_link'><a href="GraphicsContext.html#scale-instance_method" title="RubySketch::Processing::GraphicsContext#scale (method)">#scale</a></span>, <span class='object_link'><a href="GraphicsContext.html#setup__-instance_method" title="RubySketch::Processing::GraphicsContext#setup__ (method)">#setup__</a></span>, <span class='object_link'><a href="GraphicsContext.html#square-instance_method" title="RubySketch::Processing::GraphicsContext#square (method)">#square</a></span>, <span class='object_link'><a href="GraphicsContext.html#stroke-instance_method" title="RubySketch::Processing::GraphicsContext#stroke (method)">#stroke</a></span>, <span class='object_link'><a href="GraphicsContext.html#strokeCap-instance_method" title="RubySketch::Processing::GraphicsContext#strokeCap (method)">#strokeCap</a></span>, <span class='object_link'><a href="GraphicsContext.html#strokeJoin-instance_method" title="RubySketch::Processing::GraphicsContext#strokeJoin (method)">#strokeJoin</a></span>, <span class='object_link'><a href="GraphicsContext.html#strokeWeight-instance_method" title="RubySketch::Processing::GraphicsContext#strokeWeight (method)">#strokeWeight</a></span>, <span class='object_link'><a href="GraphicsContext.html#text-instance_method" title="RubySketch::Processing::GraphicsContext#text (method)">#text</a></span>, <span class='object_link'><a href="GraphicsContext.html#textAlign-instance_method" title="RubySketch::Processing::GraphicsContext#textAlign (method)">#textAlign</a></span>, <span class='object_link'><a href="GraphicsContext.html#textAscent-instance_method" title="RubySketch::Processing::GraphicsContext#textAscent (method)">#textAscent</a></span>, <span class='object_link'><a href="GraphicsContext.html#textDescent-instance_method" title="RubySketch::Processing::GraphicsContext#textDescent (method)">#textDescent</a></span>, <span class='object_link'><a href="GraphicsContext.html#textFont-instance_method" title="RubySketch::Processing::GraphicsContext#textFont (method)">#textFont</a></span>, <span class='object_link'><a href="GraphicsContext.html#textSize-instance_method" title="RubySketch::Processing::GraphicsContext#textSize (method)">#textSize</a></span>, <span class='object_link'><a href="GraphicsContext.html#textWidth-instance_method" title="RubySketch::Processing::GraphicsContext#textWidth (method)">#textWidth</a></span>, <span class='object_link'><a href="GraphicsContext.html#translate-instance_method" title="RubySketch::Processing::GraphicsContext#translate (method)">#translate</a></span>, <span class='object_link'><a href="GraphicsContext.html#triangle-instance_method" title="RubySketch::Processing::GraphicsContext#triangle (method)">#triangle</a></span>, <span class='object_link'><a href="GraphicsContext.html#width-instance_method" title="RubySketch::Processing::GraphicsContext#width (method)">#width</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(width, height)  &#x21d2; <tt><span class='object_link'><a href="" title="RubySketch::Processing::Graphics (class)">Graphics</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Initialize graphics object.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1714
+1715
+1716
+1717</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 1714</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span> <span class='lparen'>(</span><span class='id identifier rubyid_width'>width</span><span class='comma'>,</span> <span class='id identifier rubyid_height'>height</span><span class='rparen'>)</span>
+  <span class='ivar'>@image__</span> <span class='op'>=</span> <span class='const'>Rays</span><span class='op'>::</span><span class='const'>Image</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_width'>width</span><span class='comma'>,</span> <span class='id identifier rubyid_height'>height</span>
+  <span class='id identifier rubyid_setup__'>setup__</span> <span class='ivar'>@image__</span><span class='period'>.</span><span class='id identifier rubyid_painter'>painter</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="beginDraw-instance_method">
+  
+    #<strong>beginDraw</strong>(&amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Start drawing.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1721
+1722
+1723
+1724
+1725
+1726
+1727
+1728
+1729</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 1721</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_beginDraw'>beginDraw</span> <span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@painter__</span><span class='period'>.</span><span class='id identifier rubyid___send__'>__send__</span> <span class='symbol'>:begin_paint</span>
+  <span class='id identifier rubyid_beginDraw__'>beginDraw__</span>
+  <span class='id identifier rubyid_push'>push</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_block'>block</span>
+    <span class='id identifier rubyid_block'>block</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
+    <span class='id identifier rubyid_endDraw'>endDraw</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="endDraw-instance_method">
+  
+    #<strong>endDraw</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>End drawing.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1733
+1734
+1735
+1736
+1737</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 1733</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_endDraw'>endDraw</span> <span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_pop'>pop</span>
+  <span class='id identifier rubyid_endDraw__'>endDraw__</span>
+  <span class='ivar'>@painter__</span><span class='period'>.</span><span class='id identifier rubyid___send__'>__send__</span> <span class='symbol'>:end_paint</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Wed Dec  2 02:10:05 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.20 (ruby-2.6.3).
+</div>
+
+    </div>
+  </body>
+</html>
