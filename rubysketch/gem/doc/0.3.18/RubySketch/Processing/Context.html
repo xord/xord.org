@@ -1,0 +1,6786 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: RubySketch::Processing::Context
+  
+    &mdash; Documentation by YARD 0.9.26
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "RubySketch::Processing::Context";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (C)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../RubySketch.html" title="RubySketch (module)">RubySketch</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Processing.html" title="RubySketch::Processing (module)">Processing</a></span></span>
+     &raquo; 
+    <span class="title">Context</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: RubySketch::Processing::Context
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">RubySketch::Processing::Context</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  <dl>
+      <dt>Includes:</dt>
+      <dd><span class='object_link'><a href="GraphicsContext.html" title="RubySketch::Processing::GraphicsContext (module)">GraphicsContext</a></span></dd>
+  </dl>
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/rubysketch/processing.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Processing context</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+  
+    <h2>
+      Constant Summary
+      <small><a href="#" class="constants_summary_toggle">collapse</a></small>
+    </h2>
+
+    <dl class="constants">
+      
+        <dt id="Vector-constant" class="">Vector =
+          
+        </dt>
+        <dd><pre class="code"><span class='const'><span class='object_link'><a href="../Processing.html" title="RubySketch::Processing (module)">Processing</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Vector.html" title="RubySketch::Processing::Vector (class)">Vector</a></span></span></pre></dd>
+      
+        <dt id="Capture-constant" class="">Capture =
+          
+        </dt>
+        <dd><pre class="code"><span class='const'><span class='object_link'><a href="../Processing.html" title="RubySketch::Processing (module)">Processing</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Capture.html" title="RubySketch::Processing::Capture (class)">Capture</a></span></span></pre></dd>
+      
+        <dt id="Graphics-constant" class="">Graphics =
+          
+        </dt>
+        <dd><pre class="code"><span class='const'><span class='object_link'><a href="../Processing.html" title="RubySketch::Processing (module)">Processing</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Graphics.html" title="RubySketch::Processing::Graphics (class)">Graphics</a></span></span></pre></dd>
+      
+    </dl>
+  
+
+
+
+  
+  
+  <h3 class="inherited">Constants included
+     from <span class='object_link'><a href="GraphicsContext.html" title="RubySketch::Processing::GraphicsContext (module)">GraphicsContext</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="GraphicsContext.html#ALT-constant" title="RubySketch::Processing::GraphicsContext::ALT (constant)">GraphicsContext::ALT</a></span>, <span class='object_link'><a href="GraphicsContext.html#BACKSPACE-constant" title="RubySketch::Processing::GraphicsContext::BACKSPACE (constant)">GraphicsContext::BACKSPACE</a></span>, <span class='object_link'><a href="GraphicsContext.html#BASELINE-constant" title="RubySketch::Processing::GraphicsContext::BASELINE (constant)">GraphicsContext::BASELINE</a></span>, <span class='object_link'><a href="GraphicsContext.html#BOTTOM-constant" title="RubySketch::Processing::GraphicsContext::BOTTOM (constant)">GraphicsContext::BOTTOM</a></span>, <span class='object_link'><a href="GraphicsContext.html#BUTT-constant" title="RubySketch::Processing::GraphicsContext::BUTT (constant)">GraphicsContext::BUTT</a></span>, <span class='object_link'><a href="GraphicsContext.html#CAPSLOCK-constant" title="RubySketch::Processing::GraphicsContext::CAPSLOCK (constant)">GraphicsContext::CAPSLOCK</a></span>, <span class='object_link'><a href="GraphicsContext.html#CENTER-constant" title="RubySketch::Processing::GraphicsContext::CENTER (constant)">GraphicsContext::CENTER</a></span>, <span class='object_link'><a href="GraphicsContext.html#CLEAR-constant" title="RubySketch::Processing::GraphicsContext::CLEAR (constant)">GraphicsContext::CLEAR</a></span>, <span class='object_link'><a href="GraphicsContext.html#COMMAND-constant" title="RubySketch::Processing::GraphicsContext::COMMAND (constant)">GraphicsContext::COMMAND</a></span>, <span class='object_link'><a href="GraphicsContext.html#CONTROL-constant" title="RubySketch::Processing::GraphicsContext::CONTROL (constant)">GraphicsContext::CONTROL</a></span>, <span class='object_link'><a href="GraphicsContext.html#CORNER-constant" title="RubySketch::Processing::GraphicsContext::CORNER (constant)">GraphicsContext::CORNER</a></span>, <span class='object_link'><a href="GraphicsContext.html#CORNERS-constant" title="RubySketch::Processing::GraphicsContext::CORNERS (constant)">GraphicsContext::CORNERS</a></span>, <span class='object_link'><a href="GraphicsContext.html#DEGREES-constant" title="RubySketch::Processing::GraphicsContext::DEGREES (constant)">GraphicsContext::DEGREES</a></span>, <span class='object_link'><a href="GraphicsContext.html#DELETE-constant" title="RubySketch::Processing::GraphicsContext::DELETE (constant)">GraphicsContext::DELETE</a></span>, <span class='object_link'><a href="GraphicsContext.html#DOWN-constant" title="RubySketch::Processing::GraphicsContext::DOWN (constant)">GraphicsContext::DOWN</a></span>, <span class='object_link'><a href="GraphicsContext.html#ENTER-constant" title="RubySketch::Processing::GraphicsContext::ENTER (constant)">GraphicsContext::ENTER</a></span>, <span class='object_link'><a href="GraphicsContext.html#ESC-constant" title="RubySketch::Processing::GraphicsContext::ESC (constant)">GraphicsContext::ESC</a></span>, <span class='object_link'><a href="GraphicsContext.html#F1-constant" title="RubySketch::Processing::GraphicsContext::F1 (constant)">GraphicsContext::F1</a></span>, <span class='object_link'><a href="GraphicsContext.html#F10-constant" title="RubySketch::Processing::GraphicsContext::F10 (constant)">GraphicsContext::F10</a></span>, <span class='object_link'><a href="GraphicsContext.html#F11-constant" title="RubySketch::Processing::GraphicsContext::F11 (constant)">GraphicsContext::F11</a></span>, <span class='object_link'><a href="GraphicsContext.html#F12-constant" title="RubySketch::Processing::GraphicsContext::F12 (constant)">GraphicsContext::F12</a></span>, <span class='object_link'><a href="GraphicsContext.html#F13-constant" title="RubySketch::Processing::GraphicsContext::F13 (constant)">GraphicsContext::F13</a></span>, <span class='object_link'><a href="GraphicsContext.html#F14-constant" title="RubySketch::Processing::GraphicsContext::F14 (constant)">GraphicsContext::F14</a></span>, <span class='object_link'><a href="GraphicsContext.html#F15-constant" title="RubySketch::Processing::GraphicsContext::F15 (constant)">GraphicsContext::F15</a></span>, <span class='object_link'><a href="GraphicsContext.html#F16-constant" title="RubySketch::Processing::GraphicsContext::F16 (constant)">GraphicsContext::F16</a></span>, <span class='object_link'><a href="GraphicsContext.html#F17-constant" title="RubySketch::Processing::GraphicsContext::F17 (constant)">GraphicsContext::F17</a></span>, <span class='object_link'><a href="GraphicsContext.html#F18-constant" title="RubySketch::Processing::GraphicsContext::F18 (constant)">GraphicsContext::F18</a></span>, <span class='object_link'><a href="GraphicsContext.html#F19-constant" title="RubySketch::Processing::GraphicsContext::F19 (constant)">GraphicsContext::F19</a></span>, <span class='object_link'><a href="GraphicsContext.html#F2-constant" title="RubySketch::Processing::GraphicsContext::F2 (constant)">GraphicsContext::F2</a></span>, <span class='object_link'><a href="GraphicsContext.html#F20-constant" title="RubySketch::Processing::GraphicsContext::F20 (constant)">GraphicsContext::F20</a></span>, <span class='object_link'><a href="GraphicsContext.html#F21-constant" title="RubySketch::Processing::GraphicsContext::F21 (constant)">GraphicsContext::F21</a></span>, <span class='object_link'><a href="GraphicsContext.html#F22-constant" title="RubySketch::Processing::GraphicsContext::F22 (constant)">GraphicsContext::F22</a></span>, <span class='object_link'><a href="GraphicsContext.html#F23-constant" title="RubySketch::Processing::GraphicsContext::F23 (constant)">GraphicsContext::F23</a></span>, <span class='object_link'><a href="GraphicsContext.html#F24-constant" title="RubySketch::Processing::GraphicsContext::F24 (constant)">GraphicsContext::F24</a></span>, <span class='object_link'><a href="GraphicsContext.html#F3-constant" title="RubySketch::Processing::GraphicsContext::F3 (constant)">GraphicsContext::F3</a></span>, <span class='object_link'><a href="GraphicsContext.html#F4-constant" title="RubySketch::Processing::GraphicsContext::F4 (constant)">GraphicsContext::F4</a></span>, <span class='object_link'><a href="GraphicsContext.html#F5-constant" title="RubySketch::Processing::GraphicsContext::F5 (constant)">GraphicsContext::F5</a></span>, <span class='object_link'><a href="GraphicsContext.html#F6-constant" title="RubySketch::Processing::GraphicsContext::F6 (constant)">GraphicsContext::F6</a></span>, <span class='object_link'><a href="GraphicsContext.html#F7-constant" title="RubySketch::Processing::GraphicsContext::F7 (constant)">GraphicsContext::F7</a></span>, <span class='object_link'><a href="GraphicsContext.html#F8-constant" title="RubySketch::Processing::GraphicsContext::F8 (constant)">GraphicsContext::F8</a></span>, <span class='object_link'><a href="GraphicsContext.html#F9-constant" title="RubySketch::Processing::GraphicsContext::F9 (constant)">GraphicsContext::F9</a></span>, <span class='object_link'><a href="GraphicsContext.html#FUNCTION-constant" title="RubySketch::Processing::GraphicsContext::FUNCTION (constant)">GraphicsContext::FUNCTION</a></span>, <span class='object_link'><a href="GraphicsContext.html#HALF_PI-constant" title="RubySketch::Processing::GraphicsContext::HALF_PI (constant)">GraphicsContext::HALF_PI</a></span>, <span class='object_link'><a href="GraphicsContext.html#HELP-constant" title="RubySketch::Processing::GraphicsContext::HELP (constant)">GraphicsContext::HELP</a></span>, <span class='object_link'><a href="GraphicsContext.html#HOME-constant" title="RubySketch::Processing::GraphicsContext::HOME (constant)">GraphicsContext::HOME</a></span>, <span class='object_link'><a href="GraphicsContext.html#HSB-constant" title="RubySketch::Processing::GraphicsContext::HSB (constant)">GraphicsContext::HSB</a></span>, <span class='object_link'><a href="GraphicsContext.html#LEFT-constant" title="RubySketch::Processing::GraphicsContext::LEFT (constant)">GraphicsContext::LEFT</a></span>, <span class='object_link'><a href="GraphicsContext.html#MITER-constant" title="RubySketch::Processing::GraphicsContext::MITER (constant)">GraphicsContext::MITER</a></span>, <span class='object_link'><a href="GraphicsContext.html#OPTION-constant" title="RubySketch::Processing::GraphicsContext::OPTION (constant)">GraphicsContext::OPTION</a></span>, <span class='object_link'><a href="GraphicsContext.html#PAGEDOWN-constant" title="RubySketch::Processing::GraphicsContext::PAGEDOWN (constant)">GraphicsContext::PAGEDOWN</a></span>, <span class='object_link'><a href="GraphicsContext.html#PAGEUP-constant" title="RubySketch::Processing::GraphicsContext::PAGEUP (constant)">GraphicsContext::PAGEUP</a></span>, <span class='object_link'><a href="GraphicsContext.html#PI-constant" title="RubySketch::Processing::GraphicsContext::PI (constant)">GraphicsContext::PI</a></span>, <span class='object_link'><a href="GraphicsContext.html#QUARTER_PI-constant" title="RubySketch::Processing::GraphicsContext::QUARTER_PI (constant)">GraphicsContext::QUARTER_PI</a></span>, <span class='object_link'><a href="GraphicsContext.html#RADIANS-constant" title="RubySketch::Processing::GraphicsContext::RADIANS (constant)">GraphicsContext::RADIANS</a></span>, <span class='object_link'><a href="GraphicsContext.html#RADIUS-constant" title="RubySketch::Processing::GraphicsContext::RADIUS (constant)">GraphicsContext::RADIUS</a></span>, <span class='object_link'><a href="GraphicsContext.html#RGB-constant" title="RubySketch::Processing::GraphicsContext::RGB (constant)">GraphicsContext::RGB</a></span>, <span class='object_link'><a href="GraphicsContext.html#RIGHT-constant" title="RubySketch::Processing::GraphicsContext::RIGHT (constant)">GraphicsContext::RIGHT</a></span>, <span class='object_link'><a href="GraphicsContext.html#ROUND-constant" title="RubySketch::Processing::GraphicsContext::ROUND (constant)">GraphicsContext::ROUND</a></span>, <span class='object_link'><a href="GraphicsContext.html#SECTION-constant" title="RubySketch::Processing::GraphicsContext::SECTION (constant)">GraphicsContext::SECTION</a></span>, <span class='object_link'><a href="GraphicsContext.html#SHIFT-constant" title="RubySketch::Processing::GraphicsContext::SHIFT (constant)">GraphicsContext::SHIFT</a></span>, <span class='object_link'><a href="GraphicsContext.html#SPACE-constant" title="RubySketch::Processing::GraphicsContext::SPACE (constant)">GraphicsContext::SPACE</a></span>, <span class='object_link'><a href="GraphicsContext.html#SQUARE-constant" title="RubySketch::Processing::GraphicsContext::SQUARE (constant)">GraphicsContext::SQUARE</a></span>, <span class='object_link'><a href="GraphicsContext.html#TAB-constant" title="RubySketch::Processing::GraphicsContext::TAB (constant)">GraphicsContext::TAB</a></span>, <span class='object_link'><a href="GraphicsContext.html#TAU-constant" title="RubySketch::Processing::GraphicsContext::TAU (constant)">GraphicsContext::TAU</a></span>, <span class='object_link'><a href="GraphicsContext.html#TOP-constant" title="RubySketch::Processing::GraphicsContext::TOP (constant)">GraphicsContext::TOP</a></span>, <span class='object_link'><a href="GraphicsContext.html#TWO_PI-constant" title="RubySketch::Processing::GraphicsContext::TWO_PI (constant)">GraphicsContext::TWO_PI</a></span>, <span class='object_link'><a href="GraphicsContext.html#UP-constant" title="RubySketch::Processing::GraphicsContext::UP (constant)">GraphicsContext::UP</a></span>, <span class='object_link'><a href="GraphicsContext.html#WIN-constant" title="RubySketch::Processing::GraphicsContext::WIN (constant)">GraphicsContext::WIN</a></span></p>
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#abs-instance_method" title="#abs (instance method)">#<strong>abs</strong>(value)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the absolute number of the value.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#acos-instance_method" title="#acos (instance method)">#<strong>acos</strong>(value)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the inverse of cos().</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#asin-instance_method" title="#asin (instance method)">#<strong>asin</strong>(value)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the inverse of sin().</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#atan-instance_method" title="#atan (instance method)">#<strong>atan</strong>(value)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the inverse of tan().</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#atan2-instance_method" title="#atan2 (instance method)">#<strong>atan2</strong>(y, x)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the angle from a specified point.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ceil-instance_method" title="#ceil (instance method)">#<strong>ceil</strong>(value)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the closest integer number greater than or equal to the value.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#constrain-instance_method" title="#constrain (instance method)">#<strong>constrain</strong>(value, min, max)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Constrains the number between min..max.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cos-instance_method" title="#cos (instance method)">#<strong>cos</strong>(angle)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the cosine of an angle.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createCanvas-instance_method" title="#createCanvas (instance method)">#<strong>createCanvas</strong>(width, height, pixelDensity: self.pixelDensity)  &#x21d2; nil </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Changes canvas size.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createCapture-instance_method" title="#createCapture (instance method)">#<strong>createCapture</strong>(*args)  &#x21d2; Capture </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a camera object as a video input device.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createGraphics-instance_method" title="#createGraphics (instance method)">#<strong>createGraphics</strong>(width, height)  &#x21d2; Graphics </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a new off-screen graphics context object.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createVector-instance_method" title="#createVector (instance method)">#<strong>createVector</strong>(*args)  &#x21d2; Vector </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a new vector.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#degrees-instance_method" title="#degrees (instance method)">#<strong>degrees</strong>(radian)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Converts radian to degree.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#displayDensity-instance_method" title="#displayDensity (instance method)">#<strong>displayDensity</strong>  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns pixel density of display.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dist-instance_method" title="#dist (instance method)">#<strong>dist</strong>(*args)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns distance between 2 points.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#draw-instance_method" title="#draw (instance method)">#<strong>draw</strong>(&amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines draw block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#exp-instance_method" title="#exp (instance method)">#<strong>exp</strong>(n)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns Euler&#39;s number e raised to the power of value.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#floor-instance_method" title="#floor (instance method)">#<strong>floor</strong>(value)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the closest integer number less than or equal to the value.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#frameCount-instance_method" title="#frameCount (instance method)">#<strong>frameCount</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns number of frames since program started.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#frameRate-instance_method" title="#frameRate (instance method)">#<strong>frameRate</strong>  &#x21d2; Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns number of frames per second.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#key-instance_method" title="#key (instance method)">#<strong>key</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the last key that was pressed or released.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#keyCode-instance_method" title="#keyCode (instance method)">#<strong>keyCode</strong>  &#x21d2; Symbol </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the last key code that was pressed or released.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#keyPressed-instance_method" title="#keyPressed (instance method)">#<strong>keyPressed</strong>(&amp;block)  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines keyPressed block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#keyReleased-instance_method" title="#keyReleased (instance method)">#<strong>keyReleased</strong>(&amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines keyReleased block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#keyTyped-instance_method" title="#keyTyped (instance method)">#<strong>keyTyped</strong>(&amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines keyTyped block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#lerp-instance_method" title="#lerp (instance method)">#<strong>lerp</strong>(start, stop, amount)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the interpolated number between range start..stop.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#loadImage-instance_method" title="#loadImage (instance method)">#<strong>loadImage</strong>(filename, extension = nil)  &#x21d2; Image </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Loads image.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#log-instance_method" title="#log (instance method)">#<strong>log</strong>(n)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the natural logarithm (the base-e logarithm) of a number.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#loop-instance_method" title="#loop (instance method)">#<strong>loop</strong>  &#x21d2; nil </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Enables calling draw block on every frame.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mag-instance_method" title="#mag (instance method)">#<strong>mag</strong>(*args)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the magnitude (or length) of a vector.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#map-instance_method" title="#map (instance method)">#<strong>map</strong>(value, start1, stop1, start2, stop2)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Maps a number from range start1..stop1 to range start2..stop2.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#max-instance_method" title="#max (instance method)">#<strong>max</strong>(*args)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns maximum value.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#min-instance_method" title="#min (instance method)">#<strong>min</strong>(*args)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns minimum value.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#motion-instance_method" title="#motion (instance method)">#<strong>motion</strong>(&amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines motion block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#motionGravity-instance_method" title="#motionGravity (instance method)">#<strong>motionGravity</strong>  &#x21d2; Vector </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns vector for real world gravity.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mouseButton-instance_method" title="#mouseButton (instance method)">#<strong>mouseButton</strong>  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns which mouse button was pressed.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mouseDragged-instance_method" title="#mouseDragged (instance method)">#<strong>mouseDragged</strong>(&amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines mouseDragged block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mouseMoved-instance_method" title="#mouseMoved (instance method)">#<strong>mouseMoved</strong>(&amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines mouseMoved block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mousePressed-instance_method" title="#mousePressed (instance method)">#<strong>mousePressed</strong>(&amp;block)  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines mousePressed block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mouseReleased-instance_method" title="#mouseReleased (instance method)">#<strong>mouseReleased</strong>(&amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines mouseReleased block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mouseX-instance_method" title="#mouseX (instance method)">#<strong>mouseX</strong>  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns mouse x position.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mouseY-instance_method" title="#mouseY (instance method)">#<strong>mouseY</strong>  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns mouse y position.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#noise-instance_method" title="#noise (instance method)">#<strong>noise</strong>(x, y = 0, z = 0)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the perlin noise value.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#noLoop-instance_method" title="#noLoop (instance method)">#<strong>noLoop</strong>  &#x21d2; nil </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Disables calling draw block on every frame.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#norm-instance_method" title="#norm (instance method)">#<strong>norm</strong>(value, start, stop)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Normalize the value from range start..stop into 0..1.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pixelDensity-instance_method" title="#pixelDensity (instance method)">#<strong>pixelDensity</strong>(density = nil)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Changes and returns canvas pixel density.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pmouseX-instance_method" title="#pmouseX (instance method)">#<strong>pmouseX</strong>  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns mouse x position in previous frame.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pmouseY-instance_method" title="#pmouseY (instance method)">#<strong>pmouseY</strong>  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns mouse y position in previous frame.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pow-instance_method" title="#pow (instance method)">#<strong>pow</strong>(value, exponent)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns value raised to the power of exponent.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#radians-instance_method" title="#radians (instance method)">#<strong>radians</strong>(degree)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Converts degree to radian.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#random-instance_method" title="#random (instance method)">#<strong>random</strong>(*args)  &#x21d2; Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a random number in range low…high.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#redraw-instance_method" title="#redraw (instance method)">#<strong>redraw</strong>  &#x21d2; nil </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Calls draw block to redraw frame.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#round-instance_method" title="#round (instance method)">#<strong>round</strong>(value)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the closest integer number.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#setup-instance_method" title="#setup (instance method)">#<strong>setup</strong>(&amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines setup block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sin-instance_method" title="#sin (instance method)">#<strong>sin</strong>(angle)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the sine of an angle.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#size-instance_method" title="#size (instance method)">#<strong>size</strong>(width, height, pixelDensity: self.pixelDensity)  &#x21d2; nil </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Changes canvas size.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sq-instance_method" title="#sq (instance method)">#<strong>sq</strong>(value)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns squared value.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sqrt-instance_method" title="#sqrt (instance method)">#<strong>sqrt</strong>(value)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns squared value.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tan-instance_method" title="#tan (instance method)">#<strong>tan</strong>(angle)  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the ratio of the sine and cosine of an angle.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#touchEnded-instance_method" title="#touchEnded (instance method)">#<strong>touchEnded</strong>(&amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines touchEnded block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#touches-instance_method" title="#touches (instance method)">#<strong>touches</strong>  &#x21d2; Array </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns array of touches.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#touchMoved-instance_method" title="#touchMoved (instance method)">#<strong>touchMoved</strong>(&amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines touchMoved block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#touchStarted-instance_method" title="#touchStarted (instance method)">#<strong>touchStarted</strong>(&amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines touchStarted block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#windowHeight-instance_method" title="#windowHeight (instance method)">#<strong>windowHeight</strong>  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns window height.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#windowWidth-instance_method" title="#windowWidth (instance method)">#<strong>windowWidth</strong>  &#x21d2; Numeric </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns window width.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="GraphicsContext.html" title="RubySketch::Processing::GraphicsContext (module)">GraphicsContext</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="GraphicsContext.html#angleMode-instance_method" title="RubySketch::Processing::GraphicsContext#angleMode (method)">#angleMode</a></span>, <span class='object_link'><a href="GraphicsContext.html#arc-instance_method" title="RubySketch::Processing::GraphicsContext#arc (method)">#arc</a></span>, <span class='object_link'><a href="GraphicsContext.html#background-instance_method" title="RubySketch::Processing::GraphicsContext#background (method)">#background</a></span>, <span class='object_link'><a href="GraphicsContext.html#bezier-instance_method" title="RubySketch::Processing::GraphicsContext#bezier (method)">#bezier</a></span>, <span class='object_link'><a href="GraphicsContext.html#circle-instance_method" title="RubySketch::Processing::GraphicsContext#circle (method)">#circle</a></span>, <span class='object_link'><a href="GraphicsContext.html#colorMode-instance_method" title="RubySketch::Processing::GraphicsContext#colorMode (method)">#colorMode</a></span>, <span class='object_link'><a href="GraphicsContext.html#copy-instance_method" title="RubySketch::Processing::GraphicsContext#copy (method)">#copy</a></span>, <span class='object_link'><a href="GraphicsContext.html#curve-instance_method" title="RubySketch::Processing::GraphicsContext#curve (method)">#curve</a></span>, <span class='object_link'><a href="GraphicsContext.html#ellipse-instance_method" title="RubySketch::Processing::GraphicsContext#ellipse (method)">#ellipse</a></span>, <span class='object_link'><a href="GraphicsContext.html#ellipseMode-instance_method" title="RubySketch::Processing::GraphicsContext#ellipseMode (method)">#ellipseMode</a></span>, <span class='object_link'><a href="GraphicsContext.html#fill-instance_method" title="RubySketch::Processing::GraphicsContext#fill (method)">#fill</a></span>, <span class='object_link'><a href="GraphicsContext.html#height-instance_method" title="RubySketch::Processing::GraphicsContext#height (method)">#height</a></span>, <span class='object_link'><a href="GraphicsContext.html#image-instance_method" title="RubySketch::Processing::GraphicsContext#image (method)">#image</a></span>, <span class='object_link'><a href="GraphicsContext.html#imageMode-instance_method" title="RubySketch::Processing::GraphicsContext#imageMode (method)">#imageMode</a></span>, <span class='object_link'><a href="GraphicsContext.html#init__-instance_method" title="RubySketch::Processing::GraphicsContext#init__ (method)">#init__</a></span>, <span class='object_link'><a href="GraphicsContext.html#line-instance_method" title="RubySketch::Processing::GraphicsContext#line (method)">#line</a></span>, <span class='object_link'><a href="GraphicsContext.html#noFill-instance_method" title="RubySketch::Processing::GraphicsContext#noFill (method)">#noFill</a></span>, <span class='object_link'><a href="GraphicsContext.html#noStroke-instance_method" title="RubySketch::Processing::GraphicsContext#noStroke (method)">#noStroke</a></span>, <span class='object_link'><a href="GraphicsContext.html#point-instance_method" title="RubySketch::Processing::GraphicsContext#point (method)">#point</a></span>, <span class='object_link'><a href="GraphicsContext.html#pop-instance_method" title="RubySketch::Processing::GraphicsContext#pop (method)">#pop</a></span>, <span class='object_link'><a href="GraphicsContext.html#popMatrix-instance_method" title="RubySketch::Processing::GraphicsContext#popMatrix (method)">#popMatrix</a></span>, <span class='object_link'><a href="GraphicsContext.html#popStyle-instance_method" title="RubySketch::Processing::GraphicsContext#popStyle (method)">#popStyle</a></span>, <span class='object_link'><a href="GraphicsContext.html#push-instance_method" title="RubySketch::Processing::GraphicsContext#push (method)">#push</a></span>, <span class='object_link'><a href="GraphicsContext.html#pushMatrix-instance_method" title="RubySketch::Processing::GraphicsContext#pushMatrix (method)">#pushMatrix</a></span>, <span class='object_link'><a href="GraphicsContext.html#pushStyle-instance_method" title="RubySketch::Processing::GraphicsContext#pushStyle (method)">#pushStyle</a></span>, <span class='object_link'><a href="GraphicsContext.html#quad-instance_method" title="RubySketch::Processing::GraphicsContext#quad (method)">#quad</a></span>, <span class='object_link'><a href="GraphicsContext.html#rect-instance_method" title="RubySketch::Processing::GraphicsContext#rect (method)">#rect</a></span>, <span class='object_link'><a href="GraphicsContext.html#rectMode-instance_method" title="RubySketch::Processing::GraphicsContext#rectMode (method)">#rectMode</a></span>, <span class='object_link'><a href="GraphicsContext.html#resetMatrix-instance_method" title="RubySketch::Processing::GraphicsContext#resetMatrix (method)">#resetMatrix</a></span>, <span class='object_link'><a href="GraphicsContext.html#rotate-instance_method" title="RubySketch::Processing::GraphicsContext#rotate (method)">#rotate</a></span>, <span class='object_link'><a href="GraphicsContext.html#scale-instance_method" title="RubySketch::Processing::GraphicsContext#scale (method)">#scale</a></span>, <span class='object_link'><a href="GraphicsContext.html#square-instance_method" title="RubySketch::Processing::GraphicsContext#square (method)">#square</a></span>, <span class='object_link'><a href="GraphicsContext.html#stroke-instance_method" title="RubySketch::Processing::GraphicsContext#stroke (method)">#stroke</a></span>, <span class='object_link'><a href="GraphicsContext.html#strokeCap-instance_method" title="RubySketch::Processing::GraphicsContext#strokeCap (method)">#strokeCap</a></span>, <span class='object_link'><a href="GraphicsContext.html#strokeJoin-instance_method" title="RubySketch::Processing::GraphicsContext#strokeJoin (method)">#strokeJoin</a></span>, <span class='object_link'><a href="GraphicsContext.html#strokeWeight-instance_method" title="RubySketch::Processing::GraphicsContext#strokeWeight (method)">#strokeWeight</a></span>, <span class='object_link'><a href="GraphicsContext.html#text-instance_method" title="RubySketch::Processing::GraphicsContext#text (method)">#text</a></span>, <span class='object_link'><a href="GraphicsContext.html#textAlign-instance_method" title="RubySketch::Processing::GraphicsContext#textAlign (method)">#textAlign</a></span>, <span class='object_link'><a href="GraphicsContext.html#textAscent-instance_method" title="RubySketch::Processing::GraphicsContext#textAscent (method)">#textAscent</a></span>, <span class='object_link'><a href="GraphicsContext.html#textDescent-instance_method" title="RubySketch::Processing::GraphicsContext#textDescent (method)">#textDescent</a></span>, <span class='object_link'><a href="GraphicsContext.html#textFont-instance_method" title="RubySketch::Processing::GraphicsContext#textFont (method)">#textFont</a></span>, <span class='object_link'><a href="GraphicsContext.html#textSize-instance_method" title="RubySketch::Processing::GraphicsContext#textSize (method)">#textSize</a></span>, <span class='object_link'><a href="GraphicsContext.html#textWidth-instance_method" title="RubySketch::Processing::GraphicsContext#textWidth (method)">#textWidth</a></span>, <span class='object_link'><a href="GraphicsContext.html#translate-instance_method" title="RubySketch::Processing::GraphicsContext#translate (method)">#translate</a></span>, <span class='object_link'><a href="GraphicsContext.html#triangle-instance_method" title="RubySketch::Processing::GraphicsContext#triangle (method)">#triangle</a></span>, <span class='object_link'><a href="GraphicsContext.html#updateCanvas__-instance_method" title="RubySketch::Processing::GraphicsContext#updateCanvas__ (method)">#updateCanvas__</a></span>, <span class='object_link'><a href="GraphicsContext.html#width-instance_method" title="RubySketch::Processing::GraphicsContext#width (method)">#width</a></span></p>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="abs-instance_method">
+  
+    #<strong>abs</strong>(value)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the absolute number of the value.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>absolute number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2212
+2213
+2214</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2212</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_abs'>abs</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_abs'>abs</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="acos-instance_method">
+  
+    #<strong>acos</strong>(value)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the inverse of cos().</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>value for calculation</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the arc cosine</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2495
+2496
+2497</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2495</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_acos'>acos</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='const'>Math</span><span class='period'>.</span><span class='id identifier rubyid_acos'>acos</span> <span class='id identifier rubyid_value'>value</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="asin-instance_method">
+  
+    #<strong>asin</strong>(value)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the inverse of sin().</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>value for calculation</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the arc sine</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2485
+2486
+2487</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2485</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_asin'>asin</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='const'>Math</span><span class='period'>.</span><span class='id identifier rubyid_asin'>asin</span> <span class='id identifier rubyid_value'>value</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="atan-instance_method">
+  
+    #<strong>atan</strong>(value)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the inverse of tan().</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>value for valculation</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the arc tangent</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2505
+2506
+2507</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2505</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_atan'>atan</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='const'>Math</span><span class='period'>.</span><span class='id identifier rubyid_atan'>atan</span> <span class='id identifier rubyid_value'>value</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="atan2-instance_method">
+  
+    #<strong>atan2</strong>(y, x)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the angle from a specified point.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>y</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>y of the point</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>x</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>x of the point</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the angle in radians</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2516
+2517
+2518</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2516</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_atan2'>atan2</span><span class='lparen'>(</span><span class='id identifier rubyid_y'>y</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='rparen'>)</span>
+  <span class='const'>Math</span><span class='period'>.</span><span class='id identifier rubyid_atan2'>atan2</span> <span class='id identifier rubyid_y'>y</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="ceil-instance_method">
+  
+    #<strong>ceil</strong>(value)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the closest integer number greater than or equal to the value.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>rounded up number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2222
+2223
+2224</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2222</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ceil'>ceil</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_ceil'>ceil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="constrain-instance_method">
+  
+    #<strong>constrain</strong>(value, min, max)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Constrains the number between min..max.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>number to be constrained</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>min</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>lower bound of the range</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>max</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>upper bound of the range</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>constrained number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2425
+2426
+2427</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2425</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_constrain'>constrain</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_min'>min</span><span class='comma'>,</span> <span class='id identifier rubyid_max'>max</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_value'>value</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_min'>min</span> <span class='op'>?</span> <span class='id identifier rubyid_min'>min</span> <span class='op'>:</span> <span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span> <span class='op'>&gt;</span> <span class='id identifier rubyid_max'>max</span> <span class='op'>?</span> <span class='id identifier rubyid_max'>max</span> <span class='op'>:</span> <span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cos-instance_method">
+  
+    #<strong>cos</strong>(angle)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the cosine of an angle.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>angle</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>angle in radians</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the cosine</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2465
+2466
+2467</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2465</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cos'>cos</span><span class='lparen'>(</span><span class='id identifier rubyid_angle'>angle</span><span class='rparen'>)</span>
+  <span class='const'>Math</span><span class='period'>.</span><span class='id identifier rubyid_cos'>cos</span> <span class='id identifier rubyid_angle'>angle</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="createCanvas-instance_method">
+  
+    #<strong>createCanvas</strong>(width, height, pixelDensity: self.pixelDensity)  &#x21d2; <tt>nil</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Changes canvas size.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>width</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>new width</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>height</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>new height</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>pixelDensity</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>self.pixelDensity</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>new pixel density</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>nil</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>nil</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2038
+2039
+2040
+2041</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2038</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_createCanvas'>createCanvas</span><span class='lparen'>(</span><span class='id identifier rubyid_width'>width</span><span class='comma'>,</span> <span class='id identifier rubyid_height'>height</span><span class='comma'>,</span> <span class='label'>pixelDensity:</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_pixelDensity'>pixelDensity</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_resizeCanvas__'>resizeCanvas__</span> <span class='symbol'>:createCanvas</span><span class='comma'>,</span> <span class='id identifier rubyid_width'>width</span><span class='comma'>,</span> <span class='id identifier rubyid_height'>height</span><span class='comma'>,</span> <span class='id identifier rubyid_pixelDensity'>pixelDensity</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="createCapture-instance_method">
+  
+    #<strong>createCapture</strong>(*args)  &#x21d2; <tt><span class='object_link'><a href="#Capture-constant" title="RubySketch::Processing::Context::Capture (constant)">Capture</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates a camera object as a video input device.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="#Capture-constant" title="RubySketch::Processing::Context::Capture (constant)">Capture</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>camera object</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2575
+2576
+2577</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2575</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_createCapture'>createCapture</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="#Capture-constant" title="RubySketch::Processing::Context::Capture (constant)">Capture</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="createGraphics-instance_method">
+  
+    #<strong>createGraphics</strong>(width, height)  &#x21d2; <tt><span class='object_link'><a href="#Graphics-constant" title="RubySketch::Processing::Context::Graphics (constant)">Graphics</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates a new off-screen graphics context object.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>width</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>width of graphics image</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>height</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>height of graphics image</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="#Graphics-constant" title="RubySketch::Processing::Context::Graphics (constant)">Graphics</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>graphics object</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2586
+2587
+2588</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2586</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_createGraphics'>createGraphics</span><span class='lparen'>(</span><span class='id identifier rubyid_width'>width</span><span class='comma'>,</span> <span class='id identifier rubyid_height'>height</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="#Graphics-constant" title="RubySketch::Processing::Context::Graphics (constant)">Graphics</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='id identifier rubyid_width'>width</span><span class='comma'>,</span> <span class='id identifier rubyid_height'>height</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="createVector-instance_method">
+  
+    
+      <span class="overload">#<strong>createVector</strong>  &#x21d2; <tt><span class='object_link'><a href="#Vector-constant" title="RubySketch::Processing::Context::Vector (constant)">Vector</a></span></tt> </span>
+    
+      <span class="overload">#<strong>createVector</strong>(x, y)  &#x21d2; <tt><span class='object_link'><a href="#Vector-constant" title="RubySketch::Processing::Context::Vector (constant)">Vector</a></span></tt> </span>
+    
+      <span class="overload">#<strong>createVector</strong>(x, y, z)  &#x21d2; <tt><span class='object_link'><a href="#Vector-constant" title="RubySketch::Processing::Context::Vector (constant)">Vector</a></span></tt> </span>
+    
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates a new vector.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>x</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>x of new vector</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>y</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>y of new vector</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>z</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>z of new vector</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="#Vector-constant" title="RubySketch::Processing::Context::Vector (constant)">Vector</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>new vector</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2567
+2568
+2569</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2567</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_createVector'>createVector</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="#Vector-constant" title="RubySketch::Processing::Context::Vector (constant)">Vector</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='comma'>,</span> <span class='label'>context:</span> <span class='kw'>self</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="degrees-instance_method">
+  
+    #<strong>degrees</strong>(radian)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Converts radian to degree.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>radian</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>radian to convert</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>degree</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2445
+2446
+2447</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2445</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_degrees'>degrees</span><span class='lparen'>(</span><span class='id identifier rubyid_radian'>radian</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_radian'>radian</span> <span class='op'>*</span> <span class='const'>RAD2DEG__</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="displayDensity-instance_method">
+  
+    #<strong>displayDensity</strong>  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns pixel density of display.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>pixel density</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2070
+2071
+2072</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2070</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_displayDensity'>displayDensity</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@window__</span><span class='period'>.</span><span class='id identifier rubyid_painter'>painter</span><span class='period'>.</span><span class='id identifier rubyid_pixel_density'>pixel_density</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="dist-instance_method">
+  
+    
+      <span class="overload">#<strong>dist</strong>(x1, y1, x2, y2)  &#x21d2; <tt>Numeric</tt> </span>
+    
+      <span class="overload">#<strong>dist</strong>(x1, y1, z1, x2, y2, z2)  &#x21d2; <tt>Numeric</tt> </span>
+    
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns distance between 2 points.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>x1</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>x of first point</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>y1</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>y of first point</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>z1</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>z of first point</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>x2</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>x of second point</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>y2</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>y of second point</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>z2</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>z of second point</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>distance between 2 points</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2331
+2332
+2333
+2334
+2335
+2336
+2337
+2338
+2339
+2340
+2341
+2342
+2343</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2331</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_dist'>dist</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='kw'>case</span> <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span>
+  <span class='kw'>when</span> <span class='int'>4</span>
+    <span class='id identifier rubyid_x1'>x1</span><span class='comma'>,</span> <span class='id identifier rubyid_y1'>y1</span><span class='comma'>,</span> <span class='id identifier rubyid_x2'>x2</span><span class='comma'>,</span> <span class='id identifier rubyid_y2'>y2</span> <span class='op'>=</span> <span class='op'>*</span><span class='id identifier rubyid_args'>args</span>
+    <span class='id identifier rubyid_xx'>xx</span><span class='comma'>,</span> <span class='id identifier rubyid_yy'>yy</span> <span class='op'>=</span> <span class='id identifier rubyid_x2'>x2</span> <span class='op'>-</span> <span class='id identifier rubyid_x1'>x1</span><span class='comma'>,</span> <span class='id identifier rubyid_y2'>y2</span> <span class='op'>-</span> <span class='id identifier rubyid_y1'>y1</span>
+    <span class='const'>Math</span><span class='period'>.</span><span class='id identifier rubyid_sqrt'>sqrt</span> <span class='id identifier rubyid_xx'>xx</span> <span class='op'>*</span> <span class='id identifier rubyid_xx'>xx</span> <span class='op'>+</span> <span class='id identifier rubyid_yy'>yy</span> <span class='op'>*</span> <span class='id identifier rubyid_yy'>yy</span>
+  <span class='kw'>when</span> <span class='int'>3</span>
+    <span class='id identifier rubyid_x1'>x1</span><span class='comma'>,</span> <span class='id identifier rubyid_y1'>y1</span><span class='comma'>,</span> <span class='id identifier rubyid_z1'>z1</span><span class='comma'>,</span> <span class='id identifier rubyid_x2'>x2</span><span class='comma'>,</span> <span class='id identifier rubyid_y2'>y2</span><span class='comma'>,</span> <span class='id identifier rubyid_z2'>z2</span> <span class='op'>=</span> <span class='op'>*</span><span class='id identifier rubyid_args'>args</span>
+    <span class='id identifier rubyid_xx'>xx</span><span class='comma'>,</span> <span class='id identifier rubyid_yy'>yy</span><span class='comma'>,</span> <span class='id identifier rubyid_zz'>zz</span> <span class='op'>=</span> <span class='id identifier rubyid_x2'>x2</span> <span class='op'>-</span> <span class='id identifier rubyid_x1'>x1</span><span class='comma'>,</span> <span class='id identifier rubyid_y2'>y2</span> <span class='op'>-</span> <span class='id identifier rubyid_y1'>y1</span><span class='comma'>,</span> <span class='id identifier rubyid_z2'>z2</span> <span class='op'>-</span> <span class='id identifier rubyid_z1'>z1</span>
+    <span class='const'>Math</span><span class='period'>.</span><span class='id identifier rubyid_sqrt'>sqrt</span> <span class='id identifier rubyid_xx'>xx</span> <span class='op'>*</span> <span class='id identifier rubyid_xx'>xx</span> <span class='op'>+</span> <span class='id identifier rubyid_yy'>yy</span> <span class='op'>*</span> <span class='id identifier rubyid_yy'>yy</span> <span class='op'>+</span> <span class='id identifier rubyid_zz'>zz</span> <span class='op'>*</span> <span class='id identifier rubyid_zz'>zz</span>
+  <span class='kw'>else</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="draw-instance_method">
+  
+    #<strong>draw</strong>(&amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines draw block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1931
+1932
+1933
+1934</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 1931</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_draw'>draw</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@drawBlock__</span> <span class='op'>=</span> <span class='id identifier rubyid_block'>block</span> <span class='kw'>if</span> <span class='id identifier rubyid_block'>block</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="exp-instance_method">
+  
+    #<strong>exp</strong>(n)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns Euler&#39;s number e raised to the power of value.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>result number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2262
+2263
+2264</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2262</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_exp'>exp</span><span class='lparen'>(</span><span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
+  <span class='const'>Math</span><span class='period'>.</span><span class='id identifier rubyid_exp'>exp</span> <span class='id identifier rubyid_n'>n</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="floor-instance_method">
+  
+    #<strong>floor</strong>(value)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the closest integer number less than or equal to the value.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>rounded down number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2232
+2233
+2234</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2232</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_floor'>floor</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_floor'>floor</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="frameCount-instance_method">
+  
+    #<strong>frameCount</strong>  &#x21d2; <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns number of frames since program started.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>total number of frames</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2094
+2095
+2096</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2094</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_frameCount'>frameCount</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@frameCount__</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="frameRate-instance_method">
+  
+    #<strong>frameRate</strong>  &#x21d2; <tt>Float</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns number of frames per second.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>frames per second</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2102
+2103
+2104</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2102</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_frameRate'>frameRate</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@window__</span><span class='period'>.</span><span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_fps'>fps</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="key-instance_method">
+  
+    #<strong>key</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the last key that was pressed or released.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>last key</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2110
+2111
+2112</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2110</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_key'>key</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@key__</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="keyCode-instance_method">
+  
+    #<strong>keyCode</strong>  &#x21d2; <tt>Symbol</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the last key code that was pressed or released.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>last key code</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2118
+2119
+2120</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2118</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_keyCode'>keyCode</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@keyCode__</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="keyPressed-instance_method">
+  
+    #<strong>keyPressed</strong>(&amp;block)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines keyPressed block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>is any key pressed or not</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1940
+1941
+1942
+1943</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 1940</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_keyPressed'>keyPressed</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@keyPressedBlock__</span> <span class='op'>=</span> <span class='id identifier rubyid_block'>block</span> <span class='kw'>if</span> <span class='id identifier rubyid_block'>block</span>
+  <span class='kw'>not</span> <span class='ivar'>@keysPressed__</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="keyReleased-instance_method">
+  
+    #<strong>keyReleased</strong>(&amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines keyReleased block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1947
+1948
+1949
+1950</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 1947</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_keyReleased'>keyReleased</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@keyReleasedBlock__</span> <span class='op'>=</span> <span class='id identifier rubyid_block'>block</span> <span class='kw'>if</span> <span class='id identifier rubyid_block'>block</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="keyTyped-instance_method">
+  
+    #<strong>keyTyped</strong>(&amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines keyTyped block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1954
+1955
+1956
+1957</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 1954</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_keyTyped'>keyTyped</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@keyTypedBlock__</span> <span class='op'>=</span> <span class='id identifier rubyid_block'>block</span> <span class='kw'>if</span> <span class='id identifier rubyid_block'>block</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="lerp-instance_method">
+  
+    #<strong>lerp</strong>(start, stop, amount)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the interpolated number between range start..stop.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>start</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>lower bound of the range</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>stop</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>upper bound of the range</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>amount</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>amount to interpolate</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>interporated number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2365
+2366
+2367</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2365</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_lerp'>lerp</span><span class='lparen'>(</span><span class='id identifier rubyid_start'>start</span><span class='comma'>,</span> <span class='id identifier rubyid_stop'>stop</span><span class='comma'>,</span> <span class='id identifier rubyid_amount'>amount</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_start'>start</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='id identifier rubyid_stop'>stop</span> <span class='op'>-</span> <span class='id identifier rubyid_start'>start</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='id identifier rubyid_amount'>amount</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="loadImage-instance_method">
+  
+    #<strong>loadImage</strong>(filename, extension = nil)  &#x21d2; <tt><span class='object_link'><a href="Image.html" title="RubySketch::Processing::Image (class)">Image</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Loads image.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>filename</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>file name to load image</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>extension</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>type of image to load (ex. &#39;png&#39;)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Image.html" title="RubySketch::Processing::Image (class)">Image</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>loaded image object</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2597
+2598
+2599
+2600</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2597</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_loadImage'>loadImage</span><span class='lparen'>(</span><span class='id identifier rubyid_filename'>filename</span><span class='comma'>,</span> <span class='id identifier rubyid_extension'>extension</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_filename'>filename</span> <span class='op'>=</span> <span class='id identifier rubyid_getImage__'>getImage__</span> <span class='id identifier rubyid_filename'>filename</span><span class='comma'>,</span> <span class='id identifier rubyid_extension'>extension</span> <span class='kw'>if</span> <span class='id identifier rubyid_filename'>filename</span> <span class='op'>=~</span> <span class='tstring'><span class='regexp_beg'>%r|</span><span class='tstring_content'>^https?://</span><span class='regexp_end'>|</span></span>
+  <span class='const'><span class='object_link'><a href="Image.html" title="RubySketch::Processing::Image (class)">Image</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='const'>Rays</span><span class='op'>::</span><span class='const'>Image</span><span class='period'>.</span><span class='id identifier rubyid_load'>load</span> <span class='id identifier rubyid_filename'>filename</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="log-instance_method">
+  
+    #<strong>log</strong>(n)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the natural logarithm (the base-e logarithm) of a number.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>number (&gt; 0.0)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>result number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2252
+2253
+2254</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2252</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
+  <span class='const'>Math</span><span class='period'>.</span><span class='id identifier rubyid_log'>log</span> <span class='id identifier rubyid_n'>n</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="loop-instance_method">
+  
+    #<strong>loop</strong>  &#x21d2; <tt>nil</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Enables calling draw block on every frame.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>nil</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>nil</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2182
+2183
+2184</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2182</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_loop'>loop</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@loop__</span> <span class='op'>=</span> <span class='kw'>true</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mag-instance_method">
+  
+    
+      <span class="overload">#<strong>mag</strong>(x, y)  &#x21d2; <tt>Numeric</tt> </span>
+    
+      <span class="overload">#<strong>mag</strong>(x, y, z)  &#x21d2; <tt>Numeric</tt> </span>
+    
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the magnitude (or length) of a vector.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>x</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>x of point</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>y</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>y of point</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>z</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>z of point</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>magnitude</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2308
+2309
+2310
+2311
+2312
+2313
+2314
+2315</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2308</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mag'>mag</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_y'>y</span><span class='comma'>,</span> <span class='id identifier rubyid_z'>z</span> <span class='op'>=</span> <span class='op'>*</span><span class='id identifier rubyid_args'>args</span>
+  <span class='kw'>case</span> <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span>
+  <span class='kw'>when</span> <span class='int'>2</span> <span class='kw'>then</span> <span class='const'>Math</span><span class='period'>.</span><span class='id identifier rubyid_sqrt'>sqrt</span> <span class='id identifier rubyid_x'>x</span> <span class='op'>*</span> <span class='id identifier rubyid_x'>x</span> <span class='op'>+</span> <span class='id identifier rubyid_y'>y</span> <span class='op'>*</span> <span class='id identifier rubyid_y'>y</span>
+  <span class='kw'>when</span> <span class='int'>3</span> <span class='kw'>then</span> <span class='const'>Math</span><span class='period'>.</span><span class='id identifier rubyid_sqrt'>sqrt</span> <span class='id identifier rubyid_x'>x</span> <span class='op'>*</span> <span class='id identifier rubyid_x'>x</span> <span class='op'>+</span> <span class='id identifier rubyid_y'>y</span> <span class='op'>*</span> <span class='id identifier rubyid_y'>y</span> <span class='op'>+</span> <span class='id identifier rubyid_z'>z</span> <span class='op'>*</span> <span class='id identifier rubyid_z'>z</span>
+  <span class='kw'>else</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="map-instance_method">
+  
+    #<strong>map</strong>(value, start1, stop1, start2, stop2)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Maps a number from range start1..stop1 to range start2..stop2.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>number to be mapped</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>start1</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>lower bound of the range1</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>stop1</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>upper bound of the range1</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>start2</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>lower bound of the range2</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>stop2</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>upper bound of the range2</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>mapped number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2379
+2380
+2381</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2379</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_start1'>start1</span><span class='comma'>,</span> <span class='id identifier rubyid_stop1'>stop1</span><span class='comma'>,</span> <span class='id identifier rubyid_start2'>start2</span><span class='comma'>,</span> <span class='id identifier rubyid_stop2'>stop2</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_lerp'>lerp</span> <span class='id identifier rubyid_start2'>start2</span><span class='comma'>,</span> <span class='id identifier rubyid_stop2'>stop2</span><span class='comma'>,</span> <span class='id identifier rubyid_norm'>norm</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_start1'>start1</span><span class='comma'>,</span> <span class='id identifier rubyid_stop1'>stop1</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="max-instance_method">
+  
+    
+      <span class="overload">#<strong>max</strong>(a, b)  &#x21d2; <tt>Numeric</tt> </span>
+    
+      <span class="overload">#<strong>max</strong>(a, b, c)  &#x21d2; <tt>Numeric</tt> </span>
+    
+      <span class="overload">#<strong>max</strong>(array)  &#x21d2; <tt>Numeric</tt> </span>
+    
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns maximum value.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>a</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>value to compare</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>b</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>value to compare</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>c</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>value to compare</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>array</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>values to compare</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>maximum value</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2413
+2414
+2415</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2413</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_max'>max</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_flatten'>flatten</span><span class='period'>.</span><span class='id identifier rubyid_max'>max</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="min-instance_method">
+  
+    
+      <span class="overload">#<strong>min</strong>(a, b)  &#x21d2; <tt>Numeric</tt> </span>
+    
+      <span class="overload">#<strong>min</strong>(a, b, c)  &#x21d2; <tt>Numeric</tt> </span>
+    
+      <span class="overload">#<strong>min</strong>(array)  &#x21d2; <tt>Numeric</tt> </span>
+    
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns minimum value.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>a</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>value to compare</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>b</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>value to compare</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>c</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>value to compare</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>array</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>values to compare</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>minimum value</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2396
+2397
+2398</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2396</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_min'>min</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_flatten'>flatten</span><span class='period'>.</span><span class='id identifier rubyid_min'>min</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="motion-instance_method">
+  
+    #<strong>motion</strong>(&amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines motion block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2012
+2013
+2014
+2015</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2012</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_motion'>motion</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@motionBlock__</span> <span class='op'>=</span> <span class='id identifier rubyid_block'>block</span> <span class='kw'>if</span> <span class='id identifier rubyid_block'>block</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="motionGravity-instance_method">
+  
+    #<strong>motionGravity</strong>  &#x21d2; <tt><span class='object_link'><a href="#Vector-constant" title="RubySketch::Processing::Context::Vector (constant)">Vector</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns vector for real world gravity</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="#Vector-constant" title="RubySketch::Processing::Context::Vector (constant)">Vector</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>gravity vector</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2174
+2175
+2176</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2174</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_motionGravity'>motionGravity</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@motionGravity__</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mouseButton-instance_method">
+  
+    #<strong>mouseButton</strong>  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns which mouse button was pressed</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>LEFT, RIGHT, CENTER or 0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2158
+2159
+2160</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2158</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mouseButton'>mouseButton</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='lparen'>(</span><span class='ivar'>@pointersPressed__</span> <span class='op'>&amp;</span> <span class='lbracket'>[</span><span class='const'><span class='object_link'><a href="GraphicsContext.html#LEFT-constant" title="RubySketch::Processing::GraphicsContext::LEFT (constant)">LEFT</a></span></span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="GraphicsContext.html#RIGHT-constant" title="RubySketch::Processing::GraphicsContext::RIGHT (constant)">RIGHT</a></span></span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="GraphicsContext.html#CENTER-constant" title="RubySketch::Processing::GraphicsContext::CENTER (constant)">CENTER</a></span></span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span> <span class='op'>||</span> <span class='int'>0</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mouseDragged-instance_method">
+  
+    #<strong>mouseDragged</strong>(&amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines mouseDragged block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1984
+1985
+1986
+1987</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 1984</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mouseDragged'>mouseDragged</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@mouseDraggedBlock__</span> <span class='op'>=</span> <span class='id identifier rubyid_block'>block</span> <span class='kw'>if</span> <span class='id identifier rubyid_block'>block</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mouseMoved-instance_method">
+  
+    #<strong>mouseMoved</strong>(&amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines mouseMoved block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1977
+1978
+1979
+1980</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 1977</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mouseMoved'>mouseMoved</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@mouseMovedBlock__</span> <span class='op'>=</span> <span class='id identifier rubyid_block'>block</span> <span class='kw'>if</span> <span class='id identifier rubyid_block'>block</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mousePressed-instance_method">
+  
+    #<strong>mousePressed</strong>(&amp;block)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines mousePressed block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>is any mouse button pressed or not</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1963
+1964
+1965
+1966</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 1963</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mousePressed'>mousePressed</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@mousePressedBlock__</span> <span class='op'>=</span> <span class='id identifier rubyid_block'>block</span> <span class='kw'>if</span> <span class='id identifier rubyid_block'>block</span>
+  <span class='kw'>not</span> <span class='ivar'>@pointersPressed__</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mouseReleased-instance_method">
+  
+    #<strong>mouseReleased</strong>(&amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines mouseReleased block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1970
+1971
+1972
+1973</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 1970</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mouseReleased'>mouseReleased</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@mouseReleasedBlock__</span> <span class='op'>=</span> <span class='id identifier rubyid_block'>block</span> <span class='kw'>if</span> <span class='id identifier rubyid_block'>block</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mouseX-instance_method">
+  
+    #<strong>mouseX</strong>  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns mouse x position</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>horizontal position of mouse</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2126
+2127
+2128</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2126</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mouseX'>mouseX</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@pointerPos__</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mouseY-instance_method">
+  
+    #<strong>mouseY</strong>  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns mouse y position</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>vertical position of mouse</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2134
+2135
+2136</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2134</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mouseY'>mouseY</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@pointerPos__</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="noise-instance_method">
+  
+    
+      <span class="overload">#<strong>noise</strong>(x)  &#x21d2; <tt>Numeric</tt> </span>
+    
+      <span class="overload">#<strong>noise</strong>(x, y)  &#x21d2; <tt>Numeric</tt> </span>
+    
+      <span class="overload">#<strong>noise</strong>(x, y, z)  &#x21d2; <tt>Numeric</tt> </span>
+    
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the perlin noise value.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>x</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>horizontal point in noise space</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>y</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>0</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>vertical point in noise space</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>z</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>0</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>depth point in noise space</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>noise value (0.0..1.0)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2532
+2533
+2534</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2532</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_noise'>noise</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_y'>y</span> <span class='op'>=</span> <span class='int'>0</span><span class='comma'>,</span> <span class='id identifier rubyid_z'>z</span> <span class='op'>=</span> <span class='int'>0</span><span class='rparen'>)</span>
+  <span class='const'>Rays</span><span class='period'>.</span><span class='id identifier rubyid_perlin'>perlin</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_y'>y</span><span class='comma'>,</span> <span class='id identifier rubyid_z'>z</span><span class='rparen'>)</span> <span class='op'>/</span> <span class='float'>2.0</span> <span class='op'>+</span> <span class='float'>0.5</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="noLoop-instance_method">
+  
+    #<strong>noLoop</strong>  &#x21d2; <tt>nil</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Disables calling draw block on every frame.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>nil</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>nil</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2190
+2191
+2192</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2190</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_noLoop'>noLoop</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@loop__</span> <span class='op'>=</span> <span class='kw'>false</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="norm-instance_method">
+  
+    #<strong>norm</strong>(value, start, stop)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Normalize the value from range start..stop into 0..1.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>number to be normalized</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>start</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>lower bound of the range</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>stop</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>upper bound of the range</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>normalized value between 0..1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2353
+2354
+2355</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2353</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_norm'>norm</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_start'>start</span><span class='comma'>,</span> <span class='id identifier rubyid_stop'>stop</span><span class='rparen'>)</span>
+  <span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>-</span> <span class='id identifier rubyid_start'>start</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='rparen'>)</span> <span class='op'>/</span> <span class='lparen'>(</span><span class='id identifier rubyid_stop'>stop</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>-</span> <span class='id identifier rubyid_start'>start</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="pixelDensity-instance_method">
+  
+    #<strong>pixelDensity</strong>(density = nil)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Changes and returns canvas pixel density.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>density</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>new pixel density</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>current pixel density</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2049
+2050
+2051
+2052</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2049</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_pixelDensity'>pixelDensity</span><span class='lparen'>(</span><span class='id identifier rubyid_density'>density</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_resizeCanvas__'>resizeCanvas__</span> <span class='symbol'>:pixelDensity</span><span class='comma'>,</span> <span class='id identifier rubyid_width'>width</span><span class='comma'>,</span> <span class='id identifier rubyid_height'>height</span><span class='comma'>,</span> <span class='id identifier rubyid_density'>density</span> <span class='kw'>if</span> <span class='id identifier rubyid_density'>density</span>
+  <span class='ivar'>@painter__</span><span class='period'>.</span><span class='id identifier rubyid_pixel_density'>pixel_density</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="pmouseX-instance_method">
+  
+    #<strong>pmouseX</strong>  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns mouse x position in previous frame</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>horizontal position of mouse</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2142
+2143
+2144</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2142</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_pmouseX'>pmouseX</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@pointerPrevPos__</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="pmouseY-instance_method">
+  
+    #<strong>pmouseY</strong>  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns mouse y position in previous frame</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>vertical position of mouse</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2150
+2151
+2152</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2150</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_pmouseY'>pmouseY</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@pointerPrevPos__</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="pow-instance_method">
+  
+    #<strong>pow</strong>(value, exponent)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns value raised to the power of exponent.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>base number</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>exponent</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>exponent number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>value ** exponent</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2273
+2274
+2275</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2273</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_pow'>pow</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_exponent'>exponent</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_value'>value</span> <span class='op'>**</span> <span class='id identifier rubyid_exponent'>exponent</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="radians-instance_method">
+  
+    #<strong>radians</strong>(degree)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Converts degree to radian.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>degree</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>degree to convert</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>radian</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2435
+2436
+2437</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2435</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_radians'>radians</span><span class='lparen'>(</span><span class='id identifier rubyid_degree'>degree</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_degree'>degree</span> <span class='op'>*</span> <span class='const'>DEG2RAD__</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="random-instance_method">
+  
+    
+      <span class="overload">#<strong>random</strong>  &#x21d2; <tt>Float</tt> </span>
+    
+      <span class="overload">#<strong>random</strong>(high)  &#x21d2; <tt>Float</tt> </span>
+    
+      <span class="overload">#<strong>random</strong>(low, high)  &#x21d2; <tt>Float</tt> </span>
+    
+      <span class="overload">#<strong>random</strong>(choices)  &#x21d2; <tt>Float</tt> </span>
+    
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a random number in range low…high</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>low</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>lower limit</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>high</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>upper limit</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>choices</span>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>array to choose from</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Float</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>random number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2549
+2550
+2551
+2552
+2553</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2549</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_random'>random</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='period'>.</span><span class='id identifier rubyid_sample'>sample</span> <span class='kw'>if</span> <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='period'>.</span><span class='id identifier rubyid_kind_of?'>kind_of?</span> <span class='const'>Array</span>
+  <span class='id identifier rubyid_high'>high</span><span class='comma'>,</span> <span class='id identifier rubyid_low'>low</span> <span class='op'>=</span> <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_reverse'>reverse</span>
+  <span class='id identifier rubyid_rand'>rand</span> <span class='lparen'>(</span><span class='id identifier rubyid_low'>low</span> <span class='op'>||</span> <span class='int'>0</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='op'>...</span><span class='lparen'>(</span><span class='id identifier rubyid_high'>high</span> <span class='op'>||</span> <span class='int'>1</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="redraw-instance_method">
+  
+    #<strong>redraw</strong>  &#x21d2; <tt>nil</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Calls draw block to redraw frame.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>nil</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>nil</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2198
+2199
+2200</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2198</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_redraw'>redraw</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@redraw__</span> <span class='op'>=</span> <span class='kw'>true</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="round-instance_method">
+  
+    #<strong>round</strong>(value)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the closest integer number.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>rounded number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2242
+2243
+2244</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2242</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_round'>round</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_round'>round</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="setup-instance_method">
+  
+    #<strong>setup</strong>(&amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines setup block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1924
+1925
+1926
+1927</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 1924</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_setup'>setup</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@window__</span><span class='period'>.</span><span class='id identifier rubyid_setup'>setup</span> <span class='op'>=</span> <span class='id identifier rubyid_block'>block</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sin-instance_method">
+  
+    #<strong>sin</strong>(angle)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the sine of an angle.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>angle</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>angle in radians</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the sine</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2455
+2456
+2457</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2455</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sin'>sin</span><span class='lparen'>(</span><span class='id identifier rubyid_angle'>angle</span><span class='rparen'>)</span>
+  <span class='const'>Math</span><span class='period'>.</span><span class='id identifier rubyid_sin'>sin</span> <span class='id identifier rubyid_angle'>angle</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="size-instance_method">
+  
+    #<strong>size</strong>(width, height, pixelDensity: self.pixelDensity)  &#x21d2; <tt>nil</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Changes canvas size.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>width</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>new width</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>height</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>new height</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>pixelDensity</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>self.pixelDensity</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>new pixel density</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>nil</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>nil</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2025
+2026
+2027
+2028</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2025</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_size'>size</span><span class='lparen'>(</span><span class='id identifier rubyid_width'>width</span><span class='comma'>,</span> <span class='id identifier rubyid_height'>height</span><span class='comma'>,</span> <span class='label'>pixelDensity:</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_pixelDensity'>pixelDensity</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_resizeCanvas__'>resizeCanvas__</span> <span class='symbol'>:size</span><span class='comma'>,</span> <span class='id identifier rubyid_width'>width</span><span class='comma'>,</span> <span class='id identifier rubyid_height'>height</span><span class='comma'>,</span> <span class='id identifier rubyid_pixelDensity'>pixelDensity</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sq-instance_method">
+  
+    #<strong>sq</strong>(value)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns squared value.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>squared value</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2283
+2284
+2285</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2283</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sq'>sq</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_value'>value</span> <span class='op'>*</span> <span class='id identifier rubyid_value'>value</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sqrt-instance_method">
+  
+    #<strong>sqrt</strong>(value)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns squared value.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>squared value</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2293
+2294
+2295</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2293</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sqrt'>sqrt</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='const'>Math</span><span class='period'>.</span><span class='id identifier rubyid_sqrt'>sqrt</span> <span class='id identifier rubyid_value'>value</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="tan-instance_method">
+  
+    #<strong>tan</strong>(angle)  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the ratio of the sine and cosine of an angle.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>angle</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>angle in radians</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the tangent</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2475
+2476
+2477</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2475</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_tan'>tan</span><span class='lparen'>(</span><span class='id identifier rubyid_angle'>angle</span><span class='rparen'>)</span>
+  <span class='const'>Math</span><span class='period'>.</span><span class='id identifier rubyid_tan'>tan</span> <span class='id identifier rubyid_angle'>angle</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="touchEnded-instance_method">
+  
+    #<strong>touchEnded</strong>(&amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines touchEnded block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1998
+1999
+2000
+2001</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 1998</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_touchEnded'>touchEnded</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@touchEndedBlock__</span> <span class='op'>=</span> <span class='id identifier rubyid_block'>block</span> <span class='kw'>if</span> <span class='id identifier rubyid_block'>block</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="touches-instance_method">
+  
+    #<strong>touches</strong>  &#x21d2; <tt>Array</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns array of touches</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Touch objects</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2166
+2167
+2168</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2166</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_touches'>touches</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@touches__</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="touchMoved-instance_method">
+  
+    #<strong>touchMoved</strong>(&amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines touchMoved block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2005
+2006
+2007
+2008</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2005</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_touchMoved'>touchMoved</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@touchMovedBlock__</span> <span class='op'>=</span> <span class='id identifier rubyid_block'>block</span> <span class='kw'>if</span> <span class='id identifier rubyid_block'>block</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="touchStarted-instance_method">
+  
+    #<strong>touchStarted</strong>(&amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines touchStarted block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1991
+1992
+1993
+1994</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 1991</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_touchStarted'>touchStarted</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@touchStartedBlock__</span> <span class='op'>=</span> <span class='id identifier rubyid_block'>block</span> <span class='kw'>if</span> <span class='id identifier rubyid_block'>block</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="windowHeight-instance_method">
+  
+    #<strong>windowHeight</strong>  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns window height.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>window height</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2086
+2087
+2088</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2086</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_windowHeight'>windowHeight</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@window__</span><span class='period'>.</span><span class='id identifier rubyid_height'>height</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="windowWidth-instance_method">
+  
+    #<strong>windowWidth</strong>  &#x21d2; <tt>Numeric</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns window width.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>window width</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2078
+2079
+2080</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rubysketch/processing.rb', line 2078</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_windowWidth'>windowWidth</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='ivar'>@window__</span><span class='period'>.</span><span class='id identifier rubyid_width'>width</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Sun Dec  5 02:25:31 2021 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.26 (ruby-3.0.1).
+</div>
+
+    </div>
+  </body>
+</html>
