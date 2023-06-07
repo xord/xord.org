@@ -1,9 +1,9 @@
 # RubySketch
 
-Processing like Creative Coding App
+Ruby language based Processing compatible IDE for iPhone/iPad.
 
-* [iOS]()
+* [iOS](https://apps.apple.com/app/rubysketch/id1491477639)
 
 ----
 
-&copy; 2020 xord.org
+&copy; 2023 xord.org
