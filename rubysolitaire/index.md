@@ -2,7 +2,7 @@
 
 Solitaire Klondike card game for iPhone written in Ruby language.
 
-* [iOS](https://apps.apple.com/app/rubysolitaire/)
+* [iOS](https://apps.apple.com/app/id6450155271)
 
 ----
 
