@@ -92,7 +92,7 @@ lang: en
   <div class="container">
     <p class="section-eyebrow">04 — Contact</p>
     <h2 class="section-title">Contact</h2>
-    <p class="contact-lede">For work inquiries, app feedback, or questions about the open-source libraries.</p>
+    <p class="contact-lede">For app feedback, questions about the open-source libraries, or work inquiries.</p>
     <ul class="contact-list">
       <li><a href="https://x.com/xordog"><span>X</span><strong>@xordog</strong></a></li>
       <li><a href="https://github.com/xord"><span>GitHub</span><strong>@xord</strong></a></li>

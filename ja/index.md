@@ -93,7 +93,7 @@ permalink: /ja/
   <div class="container">
     <p class="section-eyebrow">04 — Contact</p>
     <h2 class="section-title">Contact</h2>
-    <p class="contact-lede">お仕事の相談、アプリへのフィードバック、OSS のお問い合わせなどはこちらから。</p>
+    <p class="contact-lede">アプリへのフィードバック、OSS のお問い合わせ、お仕事の相談などはこちらから。</p>
     <ul class="contact-list">
       <li><a href="https://x.com/xordog"><span>X</span><strong>@xordog</strong></a></li>
       <li><a href="https://github.com/xord"><span>GitHub</span><strong>@xord</strong></a></li>
