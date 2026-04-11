@@ -7,14 +7,15 @@ permalink: /ja/
 
 <section class="hero">
   <div class="container hero-inner">
-    <p class="hero-eyebrow">Apps &amp; Open Source</p>
+    <p class="hero-eyebrow">Apps · Games · Libraries</p>
     <h1 class="hero-title">
-      Indie apps<br>
-      and <span class="accent">open-source<br>libraries</span>.
+      Creative tools,<br>
+      games,<br>
+      and <span class="accent">open-source libraries</span>.
     </h1>
     <p class="hero-lede">
-      iOS アプリと、その開発を支える OSS ライブラリを公開しています。
-      企画から実装、OSS のメンテまで、基本的に全部ひとりでやっています。
+      クリエイティブツールやインディーゲームと、その開発を支える OSS ライブラリを公開しています。
+      企画から実装、OSS のメンテまで、ひとりで手がけています。
     </p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#apps">Apps</a>
@@ -34,13 +35,13 @@ permalink: /ja/
     <h2 class="section-title">About</h2>
     <div class="about-grid">
       <p class="about-lead">
-        自作の <strong>iOS アプリ</strong> と、その開発を支えるための <strong>OSS ライブラリ</strong> を公開しています。
-        アプリは App Store で、ライブラリは RubyGems / GitHub で配布しています。
+        自作の <strong>クリエイティブツール・ゲーム</strong> と、その開発を支える <strong>OSS ライブラリ</strong> を公開しています。
+        アプリは App Store で、ライブラリは GitHub / RubyGems で配布しています。
       </p>
       <ul class="facts">
-        <li><span class="fact-label">Focus</span><span class="fact-value">iOS apps / OSS libraries</span></li>
+        <li><span class="fact-label">Makes</span><span class="fact-value">Creative Tools / Games</span></li>
         <li><span class="fact-label">Stack</span><span class="fact-value">Ruby / C++ / Swift</span></li>
-        <li><span class="fact-label">Based</span><span class="fact-value">Japan</span></li>
+        <li><span class="fact-label">Mode</span><span class="fact-value">Indie Developer</span></li>
       </ul>
     </div>
   </div>
@@ -50,7 +51,7 @@ permalink: /ja/
   <div class="container">
     <p class="section-eyebrow">02 — Apps</p>
     <h2 class="section-title">Apps</h2>
-    <p class="section-lede">公開中の iOS アプリです。</p>
+    <p class="section-lede">App Store で公開中のクリエイティブツールとインディーゲームです。</p>
     <div class="cards apps-grid">
       {% for app in site.data.apps %}
       <a class="card app-card accent-{{ app.accent }}" href="{{ app.url | relative_url }}">
@@ -68,17 +69,15 @@ permalink: /ja/
     <p class="section-eyebrow">03 — Open Source</p>
     <h2 class="section-title">Open Source</h2>
     <p class="section-lede">
-      公開中の OSS ライブラリです。主にアプリの足回りを作るためのもので、RubyGems で配布しています。
+      公開中の OSS ライブラリです。主にクリエイティブツールやゲームの足回りを作るためのもので、RubyGems で配布しています。
     </p>
     <div class="cards gems-grid">
       {% for gem in site.data.gems %}
       <div class="card gem-card">
+        <a class="gem-card-main" href="{{ gem.github }}" aria-label="{{ gem.name }} on GitHub"></a>
         <h3 class="card-title mono">{{ gem.name }}</h3>
         <p class="card-tagline">{{ gem.tagline_ja }}</p>
-        <div class="card-links">
-          <a class="card-link-btn" href="{{ gem.github }}">GitHub</a>
-          <a class="card-link-btn" href="{{ gem.rubygems }}">RubyGems</a>
-        </div>
+        <a class="card-link" href="{{ gem.rubygems }}">RubyGems →</a>
       </div>
       {% endfor %}
     </div>
@@ -95,7 +94,7 @@ permalink: /ja/
     <h2 class="section-title">Contact</h2>
     <p class="contact-lede">アプリへのフィードバック、OSS のお問い合わせ、お仕事の相談などはこちらから。</p>
     <ul class="contact-list">
-      <li><a href="https://x.com/xordog"><span>X</span><strong>@xordog</strong></a></li>
+      <li><a href="https://x.com/tokujiros"><span>X</span><strong>@tokujiros</strong></a></li>
       <li><a href="https://github.com/xord"><span>GitHub</span><strong>@xord</strong></a></li>
     </ul>
   </div>

@@ -6,13 +6,14 @@ lang: en
 
 <section class="hero">
   <div class="container hero-inner">
-    <p class="hero-eyebrow">Apps &amp; Open Source</p>
+    <p class="hero-eyebrow">Apps · Games · Libraries</p>
     <h1 class="hero-title">
-      Indie apps<br>
-      and <span class="accent">open-source<br>libraries</span>.
+      Creative tools,<br>
+      games,<br>
+      and <span class="accent">open-source libraries</span>.
     </h1>
     <p class="hero-lede">
-      Building indie iOS apps and the open-source libraries that power them.
+      Building creative tools, indie games, and the open-source libraries that power them.
       Design, implementation, library maintenance — all handled solo.
     </p>
     <div class="hero-actions">
@@ -33,13 +34,14 @@ lang: en
     <h2 class="section-title">About</h2>
     <div class="about-grid">
       <p class="about-lead">
-        Self-built <strong>iOS apps</strong> and the <strong>open-source libraries</strong>
-        that make them possible. Apps ship via the App Store; libraries via RubyGems and GitHub.
+        Self-built <strong>creative tools &amp; games</strong> for iOS, plus the
+        <strong>open-source libraries</strong> that make them possible.
+        Apps ship via the App Store; libraries via GitHub and RubyGems.
       </p>
       <ul class="facts">
-        <li><span class="fact-label">Focus</span><span class="fact-value">iOS apps / OSS libraries</span></li>
+        <li><span class="fact-label">Makes</span><span class="fact-value">Creative Tools / Games</span></li>
         <li><span class="fact-label">Stack</span><span class="fact-value">Ruby / C++ / Swift</span></li>
-        <li><span class="fact-label">Based</span><span class="fact-value">Japan</span></li>
+        <li><span class="fact-label">Mode</span><span class="fact-value">Indie Developer</span></li>
       </ul>
     </div>
   </div>
@@ -49,7 +51,7 @@ lang: en
   <div class="container">
     <p class="section-eyebrow">02 — Apps</p>
     <h2 class="section-title">Apps</h2>
-    <p class="section-lede">iOS apps currently on the App Store.</p>
+    <p class="section-lede">Creative tools and indie games currently on the App Store.</p>
     <div class="cards apps-grid">
       {% for app in site.data.apps %}
       <a class="card app-card accent-{{ app.accent }}" href="{{ app.url | relative_url }}">
@@ -67,17 +69,15 @@ lang: en
     <p class="section-eyebrow">03 — Open Source</p>
     <h2 class="section-title">Open Source</h2>
     <p class="section-lede">
-      Open-source libraries I maintain. Most of them exist to power my own apps, and they're all distributed via RubyGems.
+      Open-source libraries I maintain. Most of them exist to power my own creative tools and games, and they're all distributed via RubyGems.
     </p>
     <div class="cards gems-grid">
       {% for gem in site.data.gems %}
       <div class="card gem-card">
+        <a class="gem-card-main" href="{{ gem.github }}" aria-label="{{ gem.name }} on GitHub"></a>
         <h3 class="card-title mono">{{ gem.name }}</h3>
         <p class="card-tagline">{{ gem.tagline_en }}</p>
-        <div class="card-links">
-          <a class="card-link-btn" href="{{ gem.github }}">GitHub</a>
-          <a class="card-link-btn" href="{{ gem.rubygems }}">RubyGems</a>
-        </div>
+        <a class="card-link" href="{{ gem.rubygems }}">RubyGems →</a>
       </div>
       {% endfor %}
     </div>
@@ -94,7 +94,7 @@ lang: en
     <h2 class="section-title">Contact</h2>
     <p class="contact-lede">For app feedback, questions about the open-source libraries, or work inquiries.</p>
     <ul class="contact-list">
-      <li><a href="https://x.com/xordog"><span>X</span><strong>@xordog</strong></a></li>
+      <li><a href="https://x.com/tokujiros"><span>X</span><strong>@tokujiros</strong></a></li>
       <li><a href="https://github.com/xord"><span>GitHub</span><strong>@xord</strong></a></li>
     </ul>
   </div>

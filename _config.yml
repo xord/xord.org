@@ -9,17 +9,17 @@ lang: en
 author:
   name: xord
   github: xord
-  twitter: xordog
+  twitter: tokujiros
 
 # Social meta for jekyll-seo-tag
 twitter:
-  username: xordog
+  username: tokujiros
   card: summary_large_image
 social:
   name: xord.org
   links:
     - https://github.com/xord
-    - https://x.com/xordog
+    - https://x.com/tokujiros
     - https://rubygems.org/profiles/xord
 
 plugins:

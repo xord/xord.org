@@ -437,37 +437,26 @@ h1, h2, h3, h4 { letter-spacing: -0.02em; }
   min-height: 170px;
   background: var(--bg);
 }
-.gem-card:hover {
-  // The card itself isn't clickable (two inner buttons handle links),
-  // so we disable the card-wide hover transform to avoid false affordance.
-  transform: none;
-  box-shadow: var(--shadow);
+// Transparent overlay link that makes the whole card act as a GitHub link.
+// The inner RubyGems link is lifted above via z-index so it still works.
+.gem-card-main {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
 }
-
-.card-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: auto;
-}
-.card-link-btn {
-  display: inline-block;
-  padding: 6px 12px;
-  border: 2px solid var(--ink);
-  border-radius: 999px;
-  background: var(--bg);
-  color: var(--ink);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+.gem-card .card-link {
+  position: relative;
+  z-index: 2;
+  align-self: flex-start;
   text-decoration: none;
-  transition: transform .12s ease, box-shadow .12s ease, background .12s ease, color .12s ease;
+  color: var(--ink);
 }
-.card-link-btn:hover {
-  background: var(--ink);
-  color: var(--bg);
-  transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0 var(--ink);
+.gem-card .card-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--yellow);
 }
 .gem-card::before {
   content: "";
