@@ -1,6 +1,10 @@
+{%- assign home_url = '/' -%}
+{%- if page.lang == 'ja' -%}
+  {%- assign home_url = '/ja/' -%}
+{%- endif -%}
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}">
+    <a class="brand" href="{{ home_url | relative_url }}">
       <span class="brand-mark">xord</span><span class="brand-dot">.</span><span class="brand-tld">org</span>
     </a>
     <nav class="site-nav">
@@ -10,11 +14,19 @@
       <a href="#oss">OSS</a>
       <a href="#contact">Contact</a>
       {%- else -%}
-      <a href="{{ '/#about' | relative_url }}">About</a>
-      <a href="{{ '/#apps' | relative_url }}">Apps</a>
-      <a href="{{ '/#oss' | relative_url }}">OSS</a>
-      <a href="{{ '/#contact' | relative_url }}">Contact</a>
+      <a href="{{ home_url | append: '#about' | relative_url }}">About</a>
+      <a href="{{ home_url | append: '#apps' | relative_url }}">Apps</a>
+      <a href="{{ home_url | append: '#oss' | relative_url }}">OSS</a>
+      <a href="{{ home_url | append: '#contact' | relative_url }}">Contact</a>
       {%- endif -%}
     </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <a href="{{ '/' | relative_url }}"
+         class="lang-link{% if page.lang != 'ja' %} is-active{% endif %}"
+         {% if page.lang != 'ja' %}aria-current="true"{% endif %}>EN</a>
+      <a href="{{ '/ja/' | relative_url }}"
+         class="lang-link{% if page.lang == 'ja' %} is-active{% endif %}"
+         {% if page.lang == 'ja' %}aria-current="true"{% endif %}>JA</a>
+    </div>
   </div>
 </header>

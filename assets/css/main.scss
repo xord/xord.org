@@ -70,9 +70,10 @@ h1, h2, h3, h4 { letter-spacing: -0.02em; }
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 28px;
   height: 68px;
 }
+.header-inner .brand { margin-right: auto; }
 
 .brand {
   font-family: 'Fraunces', Georgia, serif;
@@ -106,9 +107,41 @@ h1, h2, h3, h4 { letter-spacing: -0.02em; }
   border-radius: 2px;
 }
 
+// Language switcher (top-right)
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--bg);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  line-height: 1;
+}
+.lang-switch a {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--ink-soft);
+  transition: background .15s ease, color .15s ease;
+}
+.lang-switch a:hover { color: var(--ink); }
+.lang-switch a.is-active {
+  background: var(--ink);
+  color: var(--bg);
+}
+
 @media (max-width: 640px) {
-  .site-nav { gap: 16px; font-size: 13px; }
+  .header-inner { gap: 14px; }
+  .site-nav { gap: 14px; font-size: 12px; }
   .brand { font-size: 22px; }
+  .lang-switch { font-size: 10px; }
+  .lang-switch a { padding: 5px 8px; }
 }
 
 // -----------------------------------------------------
