@@ -71,11 +71,14 @@ lang: en
     </p>
     <div class="cards gems-grid">
       {% for gem in site.data.gems %}
-      <a class="card gem-card" href="{{ gem.url }}">
+      <div class="card gem-card">
         <h3 class="card-title mono">{{ gem.name }}</h3>
         <p class="card-tagline">{{ gem.tagline_en }}</p>
-        <span class="card-link">RubyGems →</span>
-      </a>
+        <div class="card-links">
+          <a class="card-link-btn" href="{{ gem.github }}">GitHub</a>
+          <a class="card-link-btn" href="{{ gem.rubygems }}">RubyGems</a>
+        </div>
+      </div>
       {% endfor %}
     </div>
     <p class="oss-aside">

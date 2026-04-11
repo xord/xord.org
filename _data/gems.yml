@@ -1,39 +1,47 @@
 - name: xot
   tagline_en: Foundation utilities in C++ / Ruby.
   tagline_ja: C++ / Ruby の基盤ユーティリティ。
-  url: https://rubygems.org/gems/xot
+  rubygems: https://rubygems.org/gems/xot
+  github: https://github.com/xord/xot
 
 - name: rucy
   tagline_en: C++ ↔ Ruby binding helpers.
   tagline_ja: C++ と Ruby のバインディング補助。
-  url: https://rubygems.org/gems/rucy
+  rubygems: https://rubygems.org/gems/rucy
+  github: https://github.com/xord/rucy
 
 - name: rays
   tagline_en: 2D graphics library.
   tagline_ja: 2D グラフィックスライブラリ。
-  url: https://rubygems.org/gems/rays
+  rubygems: https://rubygems.org/gems/rays
+  github: https://github.com/xord/rays
 
-- name: reflexion
+- name: reflex
   tagline_en: Lightweight UI / interaction framework.
   tagline_ja: 軽量な UI / インタラクションフレームワーク。
-  url: https://rubygems.org/gems/reflexion
+  rubygems: https://rubygems.org/gems/reflexion
+  github: https://github.com/xord/reflex
 
 - name: beeps
   tagline_en: Sound & music library.
   tagline_ja: サウンド・音楽ライブラリ。
-  url: https://rubygems.org/gems/beeps
+  rubygems: https://rubygems.org/gems/beeps
+  github: https://github.com/xord/beeps
 
 - name: processing
   tagline_en: Processing-compatible creative coding API.
   tagline_ja: Processing 互換のクリエイティブコーディング API。
-  url: https://rubygems.org/gems/processing
+  rubygems: https://rubygems.org/gems/processing
+  github: https://github.com/xord/processing
 
 - name: rubysketch
   tagline_en: Processing-based 2D game engine for Ruby.
   tagline_ja: Processing ベースの 2D ゲームエンジン。
-  url: https://rubygems.org/gems/rubysketch
+  rubygems: https://rubygems.org/gems/rubysketch
+  github: https://github.com/xord/rubysketch
 
 - name: reight
   tagline_en: 2D retro game engine for Ruby.
   tagline_ja: 2D レトロゲームエンジン。
-  url: https://rubygems.org/gems/reight
+  rubygems: https://rubygems.org/gems/reight
+  github: https://github.com/xord/reight
