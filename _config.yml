@@ -1,0 +1,45 @@
+title: xord.org
+tagline: Indie apps and open-source libraries.
+description: >-
+  xord.org — 自作の iOS アプリと、その開発を支える OSS ライブラリを公開しています。
+  Creator of RubySketch, RubySolitaire and a handful of open-source libraries.
+url: https://xord.org
+lang: ja
+
+author:
+  name: xord
+  github: xord
+  twitter: xordog
+
+# Social meta for jekyll-seo-tag
+twitter:
+  username: xordog
+  card: summary_large_image
+social:
+  name: xord.org
+  links:
+    - https://github.com/xord
+    - https://x.com/xordog
+    - https://rubygems.org/profiles/xord
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Default layout. The root index.md opts into `home` via its own front matter.
+# Everything else (including rubysketch/, rubysolitaire/ support pages) gets
+# wrapped by the shared `page` layout so the site shares a consistent look.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+exclude:
+  - "*.md~"
+  - "**/*.md~"
+  - "**/*~"
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

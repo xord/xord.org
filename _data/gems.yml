@@ -1,0 +1,31 @@
+- name: xot
+  tagline: Foundation utilities in C++ / Ruby.
+  url: https://rubygems.org/gems/xot
+
+- name: rucy
+  tagline: C++ ↔ Ruby binding helpers.
+  url: https://rubygems.org/gems/rucy
+
+- name: rays
+  tagline: 2D graphics library.
+  url: https://rubygems.org/gems/rays
+
+- name: reflexion
+  tagline: Lightweight UI / interaction framework.
+  url: https://rubygems.org/gems/reflexion
+
+- name: beeps
+  tagline: Sound & music library.
+  url: https://rubygems.org/gems/beeps
+
+- name: processing
+  tagline: Processing-compatible creative coding API.
+  url: https://rubygems.org/gems/processing
+
+- name: rubysketch
+  tagline: Processing-based 2D game engine for Ruby.
+  url: https://rubygems.org/gems/rubysketch
+
+- name: reight
+  tagline: 2D retro game engine for Ruby.
+  url: https://rubygems.org/gems/reight

@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark">xord</span><span class="brand-dot">.</span><span class="brand-tld">org</span>
+    </a>
+    <nav class="site-nav">
+      {%- if page.layout == 'home' -%}
+      <a href="#about">About</a>
+      <a href="#apps">Apps</a>
+      <a href="#oss">OSS</a>
+      <a href="#contact">Contact</a>
+      {%- else -%}
+      <a href="{{ '/#about' | relative_url }}">About</a>
+      <a href="{{ '/#apps' | relative_url }}">Apps</a>
+      <a href="{{ '/#oss' | relative_url }}">OSS</a>
+      <a href="{{ '/#contact' | relative_url }}">Contact</a>
+      {%- endif -%}
+    </nav>
+  </div>
+</header>

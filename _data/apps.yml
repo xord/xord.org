@@ -1,0 +1,13 @@
+- name: RubySketch
+  tagline: Processing-compatible creative coding IDE for iPhone & iPad.
+  description: Processing 互換の iOS 向けクリエイティブコーディング環境。
+  url: /rubysketch/
+  app_store: https://apps.apple.com/app/id1491477639
+  accent: magenta
+
+- name: RubySolitaire
+  tagline: Klondike solitaire for iPhone.
+  description: iPhone 向けのクロンダイクソリティア。
+  url: /rubysolitaire/
+  app_store: https://apps.apple.com/app/id6450155271
+  accent: teal
