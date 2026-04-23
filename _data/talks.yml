@@ -14,8 +14,12 @@
 
 - title: Processing Gem ベースの、2D レトロゲームエンジンの開発
   title_en: Developing a 2D Retro Game Engine on Top of Processing Gem
+  event: Ruby Association Activity Report
+  year: 2025
   slides: https://speakerdeck.com/tokujiros/processing-gem-besuno-2d-retorogemuenzinnokai-fa
 
 - title: Processing Gem for CRuby の、本家 Processing との互換性向上に向けた取り組み
   title_en: Improving Compatibility Between Processing Gem for CRuby and Original Processing
+  event: Ruby Association Activity Report
+  year: 2024
   slides: https://speakerdeck.com/tokujiros/processing-gem-for-cruby-no-ben-jia-processing-tonohu-huan-xing-xiang-shang-nixiang-ketaqu-rizu-mi

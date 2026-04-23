@@ -16,6 +16,12 @@
   url: https://zenn.dev/tokujiros/articles/973815bce7afdc
   year: 2023
 
+- title: 3ヶ月間のフルタイム個人開発を終えて。
+  title_en: After 3 Months of Full-Time Solo Development
+  platform: note
+  url: https://note.com/tokujiros/n/ndb4bc589ef8f
+  year: 2023
+
 - title: RubySketch ゲームエンジン化計画
   title_en: "RubySketch: The Game Engine Plan"
   platform: Zenn
@@ -33,12 +39,6 @@
   platform: Zenn
   url: https://zenn.dev/tokujiros/articles/09988fc99b636c
   year: 2020
-
-- title: 3ヶ月間のフルタイム個人開発を終えて。
-  title_en: After 3 Months of Full-Time Solo Development
-  platform: note
-  url: https://note.com/tokujiros/n/ndb4bc589ef8f
-  year: 2023
 
 - title: CRuby でゲームを作って iPhone で動かそう
   title_en: Build a Game with CRuby and Run It on iPhone
