@@ -88,9 +88,47 @@ lang: en
   </div>
 </section>
 
+<section class="section talks-writing" id="talks-writing">
+  <div class="container">
+    <p class="section-eyebrow">04 — Talks & Writing</p>
+    <h2 class="section-title">Talks & Writing</h2>
+    <p class="section-lede">Conference talks, technical articles, and other published work.</p>
+
+    <h3 class="subsection-title">Talks</h3>
+    <ul class="tw-list">
+      {% for talk in site.data.talks %}
+      <li class="tw-item">
+        <span class="tw-title">{{ talk.title_en }} <span class="tw-lang">JA</span></span>
+        <span class="tw-meta">
+          {% if talk.event %}<span class="tw-event">{{ talk.event }}</span>{% endif %}
+          {% if talk.year %}<span class="tw-year">{{ talk.year }}</span>{% endif %}
+        </span>
+        <span class="tw-links">
+          <a href="{{ talk.slides }}">Slides</a>
+          {% if talk.video %}<a href="{{ talk.video }}">Video</a>{% endif %}
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <h3 class="subsection-title">Writing</h3>
+    <ul class="tw-list">
+      {% for article in site.data.writing %}
+      <li class="tw-item">
+        <a class="tw-title" href="{{ article.url }}">{{ article.title_en }} <span class="tw-lang">JA</span></a>
+        <span class="tw-meta">
+          <span class="tw-platform">{{ article.platform }}</span>
+          <span class="tw-year">{{ article.year }}</span>
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
 <section class="section contact" id="contact">
   <div class="container">
-    <p class="section-eyebrow">04 — Contact</p>
+    <p class="section-eyebrow">05 — Contact</p>
     <h2 class="section-title">Contact</h2>
     <p class="contact-lede">For app feedback, questions about the open-source libraries, or work inquiries.</p>
     <ul class="contact-list">

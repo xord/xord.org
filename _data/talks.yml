@@ -1,0 +1,21 @@
+- title: 2D ゲームエンジンを MIDI 入力に対応させたのでシンセサイザーを作りたい話
+  title_en: Adding MIDI Input to a 2D Game Engine to Build a Synthesizer
+  event: RubyKaigi 2025 事後勉強会 oto
+  year: 2025
+  slides: https://speakerdeck.com/tokujiros/2d-gemuenzinwo-midi-ru-li-nidui-ying-sasetanodesinsesaizawozuo-ritaihua
+  video: https://www.youtube.com/watch?v=Oh-r34rrM6c&t=2313s
+
+- title: ゼロからの、レトロゲームエンジンの作り方
+  title_en: Building a 2D Retro Game Engine from Scratch
+  event: 東京Ruby会議12
+  year: 2025
+  slides: https://speakerdeck.com/tokujiros/zerokarano-retorogemuenzinnozuo-rifang
+  video: https://www.youtube.com/watch?v=GnYwtri2Kj4
+
+- title: Processing Gem ベースの、2D レトロゲームエンジンの開発
+  title_en: Developing a 2D Retro Game Engine on Top of Processing Gem
+  slides: https://speakerdeck.com/tokujiros/processing-gem-besuno-2d-retorogemuenzinnokai-fa
+
+- title: Processing Gem for CRuby の、本家 Processing との互換性向上に向けた取り組み
+  title_en: Improving Compatibility Between Processing Gem for CRuby and Original Processing
+  slides: https://speakerdeck.com/tokujiros/processing-gem-for-cruby-no-ben-jia-processing-tonohu-huan-xing-xiang-shang-nixiang-ketaqu-rizu-mi

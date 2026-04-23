@@ -1,0 +1,53 @@
+- title: 個人開発で8つのライブラリを積み上げてゲームエンジンを作った話
+  title_en: Building a Game Engine by Stacking 8 Libraries as a Solo Developer
+  platform: Zenn Book
+  url: https://zenn.dev/tokujiros/books/making-reight
+  year: 2026
+
+- title: Processing ベースの2Dゲームエンジン for CRuby の紹介
+  title_en: Introducing a Processing-Based 2D Game Engine for CRuby
+  platform: Zenn
+  url: https://zenn.dev/tokujiros/articles/7f0b44a6b7e2a6
+  year: 2023
+
+- title: 自前 Processing 実装の互換性検証に p5.rb を使ってみた話
+  title_en: Using p5.rb to Test Compatibility of a Custom Processing Implementation
+  platform: Zenn
+  url: https://zenn.dev/tokujiros/articles/973815bce7afdc
+  year: 2023
+
+- title: RubySketch ゲームエンジン化計画
+  title_en: "RubySketch: The Game Engine Plan"
+  platform: Zenn
+  url: https://zenn.dev/tokujiros/articles/647d1f6df2b342
+  year: 2022
+
+- title: Ruby で Processing する gem（とアプリ）の紹介
+  title_en: A Processing Gem (and App) for Ruby
+  platform: Zenn
+  url: https://zenn.dev/tokujiros/articles/96f63899760cb0
+  year: 2020
+
+- title: iPhone の「カメラ入力」でおもしろビデオカメラを作ろう
+  title_en: Making a Fun Video Camera with iPhone Camera Input
+  platform: Zenn
+  url: https://zenn.dev/tokujiros/articles/09988fc99b636c
+  year: 2020
+
+- title: 3ヶ月間のフルタイム個人開発を終えて。
+  title_en: After 3 Months of Full-Time Solo Development
+  platform: note
+  url: https://note.com/tokujiros/n/ndb4bc589ef8f
+  year: 2023
+
+- title: CRuby でゲームを作って iPhone で動かそう
+  title_en: Build a Game with CRuby and Run It on iPhone
+  platform: Qiita
+  url: https://qiita.com/tokujiros/items/0c4bd2dd995f0e6740b5
+  year: 2015
+
+- title: Ruby 用 GUI ツールキットでブロック崩しゲームを作る
+  title_en: Building a Breakout Game with a Ruby GUI Toolkit
+  platform: Qiita
+  url: https://qiita.com/tokujiros/items/a9e8d16c2a4c1ccf2238
+  year: 2014
