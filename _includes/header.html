@@ -2,6 +2,9 @@
 {%- if page.lang == 'ja' -%}
   {%- assign home_url = '/ja/' -%}
 {%- endif -%}
+{%- comment -%} a page in both languages tells the other one by url_en / url_ja {%- endcomment -%}
+{%- assign en_url = page.url_en | default: '/' -%}
+{%- assign ja_url = page.url_ja | default: '/ja/' -%}
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="{{ home_url | relative_url }}">
@@ -23,10 +26,10 @@
       {%- endif -%}
     </nav>
     <div class="lang-switch" role="group" aria-label="Language">
-      <a href="{{ '/' | relative_url }}"
+      <a href="{{ en_url | relative_url }}"
          class="lang-link{% if page.lang != 'ja' %} is-active{% endif %}"
          {% if page.lang != 'ja' %}aria-current="true"{% endif %}>EN</a>
-      <a href="{{ '/ja/' | relative_url }}"
+      <a href="{{ ja_url | relative_url }}"
          class="lang-link{% if page.lang == 'ja' %} is-active{% endif %}"
          {% if page.lang == 'ja' %}aria-current="true"{% endif %}>JA</a>
     </div>

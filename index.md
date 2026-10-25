@@ -55,6 +55,7 @@ lang: en
     <div class="cards apps-grid">
       {% for app in site.data.apps %}
       <a class="card app-card accent-{{ app.accent }}" href="{{ app.url | relative_url }}">
+        {% if app.coming_soon %}<span class="card-ribbon">Coming soon</span>{% endif %}
         <h3 class="card-title">{{ app.name }}</h3>
         <p class="card-tagline">{{ app.description_en }}</p>
         <span class="card-link">Details →</span>

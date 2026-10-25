@@ -13,3 +13,12 @@
   url: /rubysolitaire/
   app_store: https://apps.apple.com/app/id6450155271
   accent: teal
+
+- name: Desktop Golfer 2D
+  tagline: Side-view golf along the bottom of your desktop.
+  description_en: A side-view golf game played along the bottom of your Mac's desktop.
+  description_ja: Mac のデスクトップの下端で遊ぶ、横から見るゴルフゲーム。
+  url: /desktop-golfer/
+  url_ja: /desktop-golfer/ja/
+  accent: yellow
+  coming_soon: true

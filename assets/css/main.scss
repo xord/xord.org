@@ -428,6 +428,28 @@ h1, h2, h3, h4 { letter-spacing: -0.02em; }
 .app-card.accent-yellow::before  { background: var(--yellow); }
 .app-card.accent-blue::before    { background: var(--blue); }
 
+// a diagonal band across the top right corner, for an app not out yet
+.card-ribbon {
+  position: absolute;
+  top: 30px;
+  right: -48px;
+  width: 190px;
+  padding: 4px 0;
+  transform: rotate(45deg);
+  background: var(--red);
+  color: #fff;
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+}
+// keeps the name out from under the band, on a narrow card
+.card-ribbon + .card-title { padding-right: 36px; }
+
 // -----------------------------------------------------
 // OSS section
 // -----------------------------------------------------
@@ -715,6 +737,33 @@ a.tw-title:hover {
   border: 0;
   border-top: 2px solid var(--ink);
   margin: 56px 0 24px;
+}
+// a picture across the page, marked so in markdown by {: .page-image}
+.page-content img.page-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 32px 0;
+  border: var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+// a video embedded across the page, as of YouTube, in a <div class="page-video">,
+// 16:9 unless style="--ratio: 4 / 3" tells another
+.page-content .page-video {
+  margin: 32px 0;
+  aspect-ratio: var(--ratio, 16 / 9);
+  border: var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  background: var(--ink);
+}
+.page-content .page-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 .page-content code {
   font-family: 'JetBrains Mono', ui-monospace, monospace;

@@ -54,7 +54,8 @@ permalink: /ja/
     <p class="section-lede">App Store で公開中のクリエイティブツールとインディーゲームです。</p>
     <div class="cards apps-grid">
       {% for app in site.data.apps %}
-      <a class="card app-card accent-{{ app.accent }}" href="{{ app.url | relative_url }}">
+      <a class="card app-card accent-{{ app.accent }}" href="{{ app.url_ja | default: app.url | relative_url }}">
+        {% if app.coming_soon %}<span class="card-ribbon">Coming soon</span>{% endif %}
         <h3 class="card-title">{{ app.name }}</h3>
         <p class="card-tagline">{{ app.description_ja }}</p>
         <span class="card-link">Details →</span>

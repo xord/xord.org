@@ -55,7 +55,9 @@ rubysolitaire/        RubySolitaire のサポートページ群 (※下記ポリ
 
 ## よくある作業
 
-- **アプリや gem を追加**: `_data/apps.yml` か `_data/gems.yml` を編集。
+- **アプリや gem を追加**: `_data/apps.yml` か `_data/gems.yml` を編集。アプリに日本語のページがあれば `url_ja` を書くと、日本語のトップのカードがそこへ飛ぶ。まだ出ていないアプリは `coming_soon: true` でカードに "Coming soon" の帯が付く(出したら消す)。
+- **英語と日本語のページ**: 両方あるページは front matter に `url_en` / `url_ja` を書くと、ヘッダーの EN / JA がそのページの各言語版へ飛ぶ(無ければトップ)。例: `desktop-golfer/`。
+- **本文の大きな画像**: markdown で `![...](...){: .page-image}` と書くと、枠・角丸・影付きで本文の幅に収まる。YouTube などの動画は `<div class="page-video">` で iframe を包むと同じ見た目になる(縦横比は既定 16:9、`style="--ratio: 4 / 3"` で変える)。
 - **配色調整**: `assets/css/main.scss` の `:root` 変数を触る。
 - **新規サブページ追加**: トップレベルに markdown ファイルを置けば `layout: page` が自動適用される。front matter に `title:` を入れれば SEO タグに反映される。
 - **ローカルプレビュー**: `bundle exec jekyll serve` (デフォルト `http://127.0.0.1:4000/`)。
