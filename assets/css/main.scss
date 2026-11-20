@@ -733,8 +733,10 @@ a.tw-title:hover {
   text-decoration-color: var(--red);
 }
 .page-content a:hover { text-decoration-color: var(--yellow); }
-// the official badge of a store, as the store gives it: no underline
+// the official badge of a store, as the store gives it: no underline;
+// those of an app in the middle, apart from the text
 .page-content a.store-badge { display: inline-block; text-decoration: none; line-height: 0; }
+.page-content .store-badges { text-align: center; }
 .page-content hr {
   border: 0;
   border-top: 2px solid var(--ink);

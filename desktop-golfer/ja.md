@@ -13,7 +13,7 @@ url_ja: /desktop-golfer/ja/
 
 デスクトップの下端で遊ぶ、横から見るゴルフゲームです。仕事の合間のひと息に。
 
-<a class="store-badge" href="https://apps.apple.com/jp/app/id6826150604"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/ja-jp" alt="Mac App Store からダウンロード" width="189" height="54"></a>
+<p class="store-badges"><a class="store-badge" href="https://apps.apple.com/jp/app/id6826150604"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/ja-jp" alt="Mac App Store からダウンロード" width="189" height="54"></a></p>
 
 ## 遊び方
 
