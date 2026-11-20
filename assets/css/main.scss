@@ -733,6 +733,8 @@ a.tw-title:hover {
   text-decoration-color: var(--red);
 }
 .page-content a:hover { text-decoration-color: var(--yellow); }
+// the official badge of a store, as the store gives it: no underline
+.page-content a.store-badge { display: inline-block; text-decoration: none; line-height: 0; }
 .page-content hr {
   border: 0;
   border-top: 2px solid var(--ink);
