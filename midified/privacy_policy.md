@@ -2,7 +2,9 @@
 title: Midified Privacy Policy
 ---
 
-**Privacy Policy**
+# Midified
+
+## Privacy Policy
 
 Midified does not collect information about you. It does not connect to the internet, and sends no information out of your Mac.
 

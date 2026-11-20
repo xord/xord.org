@@ -2,7 +2,9 @@
 title: Desktop Golfer 2D Privacy Policy
 ---
 
-**Privacy Policy**
+# Desktop Golfer 2D
+
+## Privacy Policy
 
 Desktop Golfer 2D does not ask for information that identifies you directly, such as your name or your email address. It collects how it is used, as described below.
 
