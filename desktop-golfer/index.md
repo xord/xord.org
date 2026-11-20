@@ -11,8 +11,6 @@ url_ja: /desktop-golfer/ja/
 
 A side-view golf game played along the bottom of your desktop, for a break between tasks.
 
-<p class="store-badges"><a class="store-badge" href="https://apps.apple.com/app/id6826150604"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/en-us" alt="Download on the Mac App Store" width="211" height="54"></a></p>
-
 ## How to Play
 
 - Drag from anywhere on the ground toward where you want the ball to go, and let go to shoot.
@@ -23,6 +21,12 @@ A side-view golf game played along the bottom of your desktop, for a break betwe
 <div class="page-video" style="--ratio: 4 / 3">
   <iframe src="https://www.youtube-nocookie.com/embed/Iupj5qyTZxQ" title="Desktop Golfer 2D gameplay video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+## Download
+
+Desktop Golfer 2D is available on the Mac App Store.
+
+<p class="store-badges"><a class="store-badge" href="https://apps.apple.com/app/id6826150604"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/en-us" alt="Download on the Mac App Store" width="211" height="54"></a></p>
 
 ## FAQ
 
