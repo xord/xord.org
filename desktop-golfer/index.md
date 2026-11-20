@@ -11,7 +11,7 @@ url_ja: /desktop-golfer/ja/
 
 A side-view golf game played along the bottom of your desktop, for a break between tasks.
 
-<a class="store-badge" href="https://apps.apple.com/app/id6826150604"><img src="https://tools.applemarketingtools.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83" alt="Download on the Mac App Store" width="245" height="82"></a>
+<a class="store-badge" href="https://apps.apple.com/app/id6826150604"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-mac-app-store/black/en-us" alt="Download on the Mac App Store" width="211" height="54"></a>
 
 ## How to Play
 
