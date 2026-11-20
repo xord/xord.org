@@ -22,3 +22,12 @@
   url_ja: /desktop-golfer/ja/
   accent: yellow
   coming_soon: true
+
+- name: Midified
+  tagline: Your MIDI controllers as the keyboard of your Mac.
+  description_en: A Mac app in the menu bar turning MIDI controllers into the keyboard.
+  description_ja: MIDI コントローラーを Mac のキーボードにする、メニューバーのアプリ。
+  url: /midified/
+  url_ja: /midified/ja/
+  accent: blue
+  coming_soon: true
